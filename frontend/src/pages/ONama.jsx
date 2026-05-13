@@ -26,14 +26,13 @@ function ONama() {
           <h2 className="text-2xl font-bold text-green-800 mb-6 text-center">Naš tim</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { ime: 'Edvin', uloga: 'Full Stack Developer', emoji: '👨‍💻' },
-              { ime: 'Član 2', uloga: 'Frontend Developer', emoji: '🎨' },
-              { ime: 'Član 3', uloga: 'DevOps Engineer', emoji: '⚙️' },
+              { ime: 'Edvin Bešlić', emoji: '👨‍💻' },
+              { ime: 'Ammar Puščul', emoji: '👨‍💻' },
+              { ime: 'Hena Neslanović', emoji: '👩‍💻' },
             ].map((clan) => (
               <div key={clan.ime} className="bg-white rounded-xl shadow p-6 text-center">
                 <div className="text-5xl mb-3">{clan.emoji}</div>
                 <h3 className="text-lg font-bold text-gray-800">{clan.ime}</h3>
-                <p className="text-green-700 text-sm">{clan.uloga}</p>
               </div>
             ))}
           </div>

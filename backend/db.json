@@ -1,26 +1,41 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "ime": "Admin",
       "email": "admin@recepti.ba",
       "lozinka": "admin123",
       "uloga": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "ime": "Gost",
       "email": "gost@recepti.ba",
       "lozinka": "gost123",
       "uloga": "guest"
+    },
+    {
+      "ime": "edvin",
+      "email": "edvixking@gmail.com",
+      "lozinka": "12345678",
+      "uloga": "guest",
+      "id": "VzpilB5bTOQ"
     }
   ],
   "recepti": [
     {
-      "id": 1,
+      "id": "1",
       "naziv": "Pileća čorba",
       "kategorija": "juha",
-      "sastojci": ["500g piletine", "2 mrkve", "1 luk", "3 krompira", "sol", "biber", "peršun"],
+      "sastojci": [
+        "500g piletine",
+        "2 mrkve",
+        "1 luk",
+        "3 krompira",
+        "sol",
+        "biber",
+        "peršun"
+      ],
       "upute": "Piletinu skuhajte u 2L vode. Dodajte nasjeckano povrće i kuhajte 40 minuta. Začinite solju i biberom, pospite peršunom.",
       "vremePripreme": 50,
       "kalorije": 220,
@@ -28,10 +43,17 @@
       "autorId": 1
     },
     {
-      "id": 2,
+      "id": "2",
       "naziv": "Grčka salata",
       "kategorija": "salata",
-      "sastojci": ["2 paradajza", "1 krastavac", "100g feta sira", "masline", "maslinovo ulje", "origano"],
+      "sastojci": [
+        "2 paradajza",
+        "1 krastavac",
+        "100g feta sira",
+        "masline",
+        "maslinovo ulje",
+        "origano"
+      ],
       "upute": "Nasjeckajte paradajz i krastavac. Dodajte masline i feta sir. Prelijte maslinovim uljem i pospite origanom.",
       "vremePripreme": 10,
       "kalorije": 180,
@@ -39,10 +61,18 @@
       "autorId": 1
     },
     {
-      "id": 3,
+      "id": "3",
       "naziv": "Pečeni losos",
       "kategorija": "glavno jelo",
-      "sastojci": ["400g lososa", "1 limun", "maslinovo ulje", "češnjak", "ruzmarin", "sol", "biber"],
+      "sastojci": [
+        "400g lososa",
+        "1 limun",
+        "maslinovo ulje",
+        "češnjak",
+        "ruzmarin",
+        "sol",
+        "biber"
+      ],
       "upute": "Lososa začinite solju, biberom i češnjakom. Prelijte maslinovim uljem i sokom limuna. Pecite na 200°C 20 minuta.",
       "vremePripreme": 25,
       "kalorije": 350,
@@ -50,10 +80,16 @@
       "autorId": 1
     },
     {
-      "id": 4,
+      "id": "4",
       "naziv": "Overnight oats",
       "kategorija": "doručak",
-      "sastojci": ["80g zobenih pahuljica", "200ml mlijeka", "1 banana", "med", "borovnice"],
+      "sastojci": [
+        "80g zobenih pahuljica",
+        "200ml mlijeka",
+        "1 banana",
+        "med",
+        "borovnice"
+      ],
       "upute": "Pomiješajte pahuljice sa mlijekom. Ostavite u frižideru preko noći. Ujutro dodajte nasjeckanu bananu, med i borovnice.",
       "vremePripreme": 5,
       "kalorije": 320,
@@ -61,10 +97,17 @@
       "autorId": 1
     },
     {
-      "id": 5,
+      "id": "5",
       "naziv": "Pasta sa povrćem",
       "kategorija": "glavno jelo",
-      "sastojci": ["300g paste", "1 tikvica", "1 paprika", "paradajz sos", "maslinovo ulje", "parmezan"],
+      "sastojci": [
+        "300g paste",
+        "1 tikvica",
+        "1 paprika",
+        "paradajz sos",
+        "maslinovo ulje",
+        "parmezan"
+      ],
       "upute": "Skuhajte pastu. Na ulju propržite nasjeckanu tikvicu i papriku. Dodajte paradajz sos i kuhajte 10 minuta. Pomiješajte sa pastom.",
       "vremePripreme": 25,
       "kalorije": 420,
@@ -72,10 +115,16 @@
       "autorId": 1
     },
     {
-      "id": 6,
+      "id": "6",
       "naziv": "Smoothie bowl",
       "kategorija": "doručak",
-      "sastojci": ["1 banana", "100g jagoda", "200ml kokosovog mlijeka", "granola", "chia sjemenke"],
+      "sastojci": [
+        "1 banana",
+        "100g jagoda",
+        "200ml kokosovog mlijeka",
+        "granola",
+        "chia sjemenke"
+      ],
       "upute": "Izblendajte bananu, jagode i kokosovo mlijeko. Sipajte u zdjelu i pospite granolom i chia sjemenkama.",
       "vremePripreme": 10,
       "kalorije": 280,
@@ -85,18 +134,47 @@
   ],
   "planIshrane": [
     {
-      "id": 1,
+      "id": "1",
       "naziv": "Sedmični plan ishrane",
       "dani": {
-        "ponedjeljak": { "dorucak": 4, "rucak": 1, "vecera": 3 },
-        "utorak": { "dorucak": 6, "rucak": 2, "vecera": 5 },
-        "srijeda": { "dorucak": 4, "rucak": 5, "vecera": 1 },
-        "cetvrtak": { "dorucak": 6, "rucak": 3, "vecera": 2 },
-        "petak": { "dorucak": 4, "rucak": 1, "vecera": 5 },
-        "subota": { "dorucak": 6, "rucak": 2, "vecera": 3 },
-        "nedjelja": { "dorucak": 4, "rucak": 5, "vecera": 1 }
+        "ponedjeljak": {
+          "dorucak": 4,
+          "rucak": 1,
+          "vecera": 3
+        },
+        "utorak": {
+          "dorucak": 6,
+          "rucak": 2,
+          "vecera": 5
+        },
+        "srijeda": {
+          "dorucak": 4,
+          "rucak": 5,
+          "vecera": 1
+        },
+        "cetvrtak": {
+          "dorucak": 6,
+          "rucak": 3,
+          "vecera": 2
+        },
+        "petak": {
+          "dorucak": 4,
+          "rucak": 1,
+          "vecera": 5
+        },
+        "subota": {
+          "dorucak": 6,
+          "rucak": 2,
+          "vecera": 3
+        },
+        "nedjelja": {
+          "dorucak": 4,
+          "rucak": 5,
+          "vecera": 1
+        }
       }
     }
   ],
-  "kontaktPoruke": []
+  "kontaktPoruke": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }

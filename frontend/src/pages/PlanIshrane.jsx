@@ -1,4 +1,5 @@
 import useFetch from '../hooks/useFetch'
+import Spinner from '../components/Spinner'
 
 function PlanIshrane() {
   const { data: plan, loading, greska } = useFetch('http://localhost:3001/planIshrane/1')
@@ -10,11 +11,7 @@ function PlanIshrane() {
 
   const getRecept = (id) => recepti?.find(r => r.id === id || r.id === String(id))
 
-  if (loading) return (
-    <div className="min-h-screen flex items-center justify-center">
-      <p className="text-green-700 text-xl">Učitavanje plana ishrane...</p>
-    </div>
-  )
+  if (loading) return <Spinner />
 
   if (greska) return (
     <div className="min-h-screen flex items-center justify-center">

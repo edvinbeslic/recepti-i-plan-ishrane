@@ -4,11 +4,16 @@ import RecipeCard from '../components/RecipeCard'
 
 function Landing() {
   const [recepti, setRecepti] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     fetch('http://localhost:3001/recepti')
       .then(res => res.json())
-      .then(data => setRecepti(data.slice(0, 3)))
+      .then(data => {
+        setRecepti(data.slice(0, 3))
+        setLoading(false)
+      })
+      .catch(() => setLoading(false))
   }, [])
 
   return (
@@ -63,11 +68,17 @@ function Landing() {
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-green-800 text-center mb-10">Popularni recepti</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {recepti.map(recept => (
-              <RecipeCard key={recept.id} recept={recept} />
-            ))}
-          </div>
+          {loading ? (
+            <p className="text-center text-gray-500">Učitavanje recepata...</p>
+          ) : recepti.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {recepti.map(recept => (
+                <RecipeCard key={recept.id} recept={recept} />
+              ))}
+            </div>
+          ) : (
+            <p className="text-center text-gray-500">Trenutno nema dostupnih recepata.</p>
+          )}
           <div className="text-center mt-10">
             <Link
               to="/recepti"

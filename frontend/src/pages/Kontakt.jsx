@@ -1,20 +1,23 @@
 import { useState } from 'react'
+import Toast from '../components/Toast'
 
 function Kontakt() {
   const [forma, setForma] = useState({
     ime: '',
     email: '',
+    predmet: '',
     poruka: ''
   })
   const [greske, setGreske] = useState({})
-  const [uspjeh, setUspjeh] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [toast, setToast] = useState(null)
 
   const validiraj = () => {
     const nove = {}
     if (!forma.ime) nove.ime = 'Ime je obavezno'
     if (!forma.email) nove.email = 'Email je obavezan'
     else if (!/\S+@\S+\.\S+/.test(forma.email)) nove.email = 'Email nije validan'
+    if (!forma.predmet) nove.predmet = 'Predmet je obavezan'
     if (!forma.poruka) nove.poruka = 'Poruka je obavezna'
     else if (forma.poruka.length < 10) nove.poruka = 'Poruka mora imati najmanje 10 znakova'
     return nove
@@ -39,11 +42,11 @@ function Kontakt() {
           datum: new Date().toISOString()
         })
       })
-      setUspjeh(true)
-      setForma({ ime: '', email: '', poruka: '' })
+      setToast({ poruka: 'Poruka je uspješno poslana!', tip: 'uspjeh' })
+      setForma({ ime: '', email: '', predmet: '', poruka: '' })
       setGreske({})
     } catch (err) {
-      setGreske({ general: 'Greška pri slanju poruke' })
+      setToast({ poruka: 'Greška pri slanju poruke!', tip: 'greska' })
     }
 
     setLoading(false)
@@ -51,28 +54,22 @@ function Kontakt() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-6">
-      <div className="max-w-6xl mx-auto">
+      {toast && (
+        <Toast
+          poruka={toast.poruka}
+          tip={toast.tip}
+          onClose={() => setToast(null)}
+        />
+      )}
 
+      <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl font-bold text-green-800 mb-2 text-center">Kontakt</h1>
         <p className="text-gray-500 text-center mb-10">Pošaljite nam poruku, odgovaramo u roku od 24 sata</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-          {/* Forma */}
           <div className="bg-white rounded-xl shadow p-8">
             <h2 className="text-2xl font-bold text-green-800 mb-6">Pošaljite poruku</h2>
-
-            {uspjeh && (
-              <div className="bg-green-100 text-green-700 p-3 rounded mb-4 text-sm">
-                ✅ Poruka je uspješno poslana!
-              </div>
-            )}
-
-            {greske.general && (
-              <div className="bg-red-100 text-red-700 p-3 rounded mb-4 text-sm">
-                {greske.general}
-              </div>
-            )}
 
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <div>
@@ -100,6 +97,18 @@ function Kontakt() {
               </div>
 
               <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Predmet</label>
+                <input
+                  type="text"
+                  value={forma.predmet}
+                  onChange={(e) => setForma({ ...forma, predmet: e.target.value })}
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                  placeholder="Predmet poruke"
+                />
+                {greske.predmet && <p className="text-red-500 text-sm mt-1">{greske.predmet}</p>}
+              </div>
+
+              <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Poruka</label>
                 <textarea
                   value={forma.poruka}
@@ -121,10 +130,7 @@ function Kontakt() {
             </form>
           </div>
 
-          {/* Mapa i info */}
           <div className="flex flex-col gap-6">
-
-            {/* Kontakt info */}
             <div className="bg-white rounded-xl shadow p-6">
               <h2 className="text-xl font-bold text-green-800 mb-4">Kontakt informacije</h2>
               <div className="flex flex-col gap-3 text-gray-600">
@@ -135,7 +141,6 @@ function Kontakt() {
               </div>
             </div>
 
-            {/* Google Maps */}
             <div className="bg-white rounded-xl shadow overflow-hidden">
               <iframe
                 title="Lokacija"
@@ -147,8 +152,8 @@ function Kontakt() {
                 loading="lazy"
               />
             </div>
-
           </div>
+
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import RecipeCard from '../components/RecipeCard'
+import Spinner from '../components/Spinner'
 
 function Recepti() {
   const { data: recepti, loading, greska } = useFetch('http://localhost:3001/recepti')
@@ -16,11 +16,7 @@ function Recepti() {
     return odgovaraPretrazi && odgovaraFilteru
   })
 
-  if (loading) return (
-    <div className="min-h-screen flex items-center justify-center">
-      <p className="text-green-700 text-xl">Učitavanje recepata...</p>
-    </div>
-  )
+  if (loading) return <Spinner />
 
   if (greska) return (
     <div className="min-h-screen flex items-center justify-center">
@@ -34,7 +30,6 @@ function Recepti() {
         
         <h1 className="text-4xl font-bold text-green-800 mb-8 text-center">Svi recepti</h1>
 
-        {/* Pretraga */}
         <div className="mb-6">
           <input
             type="text"
@@ -45,7 +40,6 @@ function Recepti() {
           />
         </div>
 
-        {/* Filteri */}
         <div className="flex gap-3 mb-8 flex-wrap">
           {kategorije.map(kat => (
             <button
@@ -62,7 +56,6 @@ function Recepti() {
           ))}
         </div>
 
-        {/* Recepti grid */}
         {filtrirani?.length === 0 ? (
           <div className="text-center py-20 text-gray-500">
             <p className="text-xl">Nema recepata za "{pretraga}"</p>
@@ -74,7 +67,6 @@ function Recepti() {
             ))}
           </div>
         )}
-
       </div>
     </div>
   )

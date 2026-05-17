@@ -1,16 +1,13 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
+import Spinner from '../components/Spinner'
 
 function ReceptDetalji() {
   const { id } = useParams()
   const navigate = useNavigate()
   const { data: recept, loading, greska } = useFetch(`http://localhost:3001/recepti/${id}`)
 
-  if (loading) return (
-    <div className="min-h-screen flex items-center justify-center">
-      <p className="text-green-700 text-xl">Učitavanje recepta...</p>
-    </div>
-  )
+  if (loading) return <Spinner />
 
   if (greska || !recept) return (
     <div className="min-h-screen flex items-center justify-center">
@@ -22,7 +19,6 @@ function ReceptDetalji() {
     <div className="min-h-screen bg-gray-50 py-10 px-6">
       <div className="max-w-4xl mx-auto">
 
-        {/* Nazad dugme */}
         <button
           onClick={() => navigate(-1)}
           className="text-green-700 hover:underline mb-6 flex items-center gap-2"
@@ -30,14 +26,12 @@ function ReceptDetalji() {
           ← Nazad na recepte
         </button>
 
-        {/* Slika */}
         <img
           src={recept.slika}
           alt={recept.naziv}
           className="w-full h-72 object-cover rounded-xl mb-6"
         />
 
-        {/* Header */}
         <div className="bg-white rounded-xl p-6 shadow mb-6">
           <span className="text-xs bg-green-100 text-green-700 px-3 py-1 rounded-full capitalize">
             {recept.kategorija}
@@ -63,8 +57,6 @@ function ReceptDetalji() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          
-          {/* Sastojci */}
           <div className="bg-white rounded-xl p-6 shadow">
             <h2 className="text-2xl font-bold text-green-800 mb-4">Sastojci</h2>
             <ul className="flex flex-col gap-2">
@@ -77,12 +69,10 @@ function ReceptDetalji() {
             </ul>
           </div>
 
-          {/* Upute */}
           <div className="bg-white rounded-xl p-6 shadow">
             <h2 className="text-2xl font-bold text-green-800 mb-4">Upute za pripremu</h2>
             <p className="text-gray-700 leading-relaxed">{recept.upute}</p>
           </div>
-
         </div>
 
       </div>

@@ -1,15 +1,45 @@
+import { useState } from 'react'
 import useFetch from '../hooks/useFetch'
 import Spinner from '../components/Spinner'
+import { useAuth } from '../hooks/useAuth'
+import Toast from '../components/Toast'
 
 function PlanIshrane() {
+  const { korisnik } = useAuth()
   const { data: plan, loading, greska } = useFetch('http://localhost:3001/planIshrane/1')
   const { data: recepti } = useFetch('http://localhost:3001/recepti')
+  const [toast, setToast] = useState(null)
+  const [zahtjevPoslan, setZahtjevPoslan] = useState(false)
+  const [poruka, setPoruka] = useState('')
 
   const dani = ['ponedjeljak', 'utorak', 'srijeda', 'cetvrtak', 'petak', 'subota', 'nedjelja']
   const obroci = ['dorucak', 'rucak', 'vecera']
   const obrociNazivi = { dorucak: '🍳 Doručak', rucak: '🍽️ Ručak', vecera: '🌙 Večera' }
 
   const getRecept = (id) => recepti?.find(r => r.id === id || r.id === String(id))
+
+  const handleZahtjev = async (e) => {
+    e.preventDefault()
+    try {
+      await fetch('http://localhost:3001/zahtjeviZaPlan', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          korisnikId: korisnik.id,
+          korisnikIme: korisnik.ime,
+          korisnikEmail: korisnik.email,
+          poruka,
+          status: 'na čekanju',
+          datum: new Date().toISOString()
+        })
+      })
+      setToast({ poruka: 'Zahtjev je uspješno poslan adminu!', tip: 'uspjeh' })
+      setZahtjevPoslan(true)
+      setPoruka('')
+    } catch (err) {
+      setToast({ poruka: 'Greška pri slanju zahtjeva!', tip: 'greska' })
+    }
+  }
 
   if (loading) return <Spinner />
 
@@ -21,11 +51,54 @@ function PlanIshrane() {
 
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-6">
+      {toast && (
+        <Toast
+          poruka={toast.poruka}
+          tip={toast.tip}
+          onClose={() => setToast(null)}
+        />
+      )}
+
       <div className="max-w-6xl mx-auto">
 
         <h1 className="text-4xl font-bold text-green-800 mb-2 text-center">Plan ishrane</h1>
         <p className="text-gray-500 text-center mb-10">Sedmični plan obroka</p>
 
+        {/* Zahtjev za personalizirani plan */}
+        {korisnik?.uloga === 'guest' && (
+          <div className="bg-white rounded-xl shadow p-6 mb-8">
+            <h2 className="text-xl font-bold text-green-800 mb-2">
+              🥗 Zatraži personalizirani plan
+            </h2>
+            <p className="text-gray-500 text-sm mb-4">
+              Pošaljite zahtjev adminu za kreiranje vašeg personalnog plana ishrane.
+            </p>
+            {zahtjevPoslan ? (
+              <div className="bg-green-50 text-green-700 p-4 rounded-lg">
+                ✅ Vaš zahtjev je poslan! Admin će vas kontaktirati.
+              </div>
+            ) : (
+              <form onSubmit={handleZahtjev} className="flex flex-col gap-3">
+                <textarea
+                  value={poruka}
+                  onChange={(e) => setPoruka(e.target.value)}
+                  rows={3}
+                  placeholder="Opišite vaše prehrambene navike, alergije, ciljeve..."
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg transition w-fit"
+                >
+                  Pošalji zahtjev
+                </button>
+              </form>
+            )}
+          </div>
+        )}
+
+        {/* Sedmični plan */}
         <div className="flex flex-col gap-6">
           {dani.map(dan => (
             <div key={dan} className="bg-white rounded-xl shadow p-6">

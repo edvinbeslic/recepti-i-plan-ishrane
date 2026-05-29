@@ -5,6 +5,7 @@ function Admin() {
   const { data: recepti, loading } = useFetch('http://localhost:3001/recepti')
   const { data: korisnici } = useFetch('http://localhost:3001/users')
   const { data: poruke } = useFetch('http://localhost:3001/kontaktPoruke')
+  const { data: zahtjevi } = useFetch('http://localhost:3001/zahtjeviZaPlan')
 
   const [odabraniRecept, setOdabraniRecept] = useState(null)
   const [forma, setForma] = useState({
@@ -112,7 +113,7 @@ function Admin() {
 
         {/* Navigacija */}
         <div className="flex gap-3 mb-8 flex-wrap">
-          {['statistike', 'recepti', 'korisnici', 'poruke', 'dodaj'].map(tab => (
+          {['statistike', 'recepti', 'korisnici', 'poruke', 'zahtjevi', 'dodaj'].map(tab => (
             <button
               key={tab}
               onClick={() => { setPrikaz(tab); resetForma() }}
@@ -126,6 +127,7 @@ function Admin() {
                tab === 'recepti' ? '🍽️ Recepti' :
                tab === 'korisnici' ? '👥 Korisnici' :
                tab === 'poruke' ? '✉️ Poruke' :
+               tab === 'zahtjevi' ? '📋 Zahtjevi' :
                '+ Dodaj recept'}
             </button>
           ))}
@@ -133,7 +135,7 @@ function Admin() {
 
         {/* Statistike */}
         {prikaz === 'statistike' && (
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="bg-white rounded-xl shadow p-6 text-center">
               <div className="text-5xl font-bold text-green-700 mb-2">{recepti?.length || 0}</div>
               <p className="text-gray-600 font-medium">Ukupno recepata</p>
@@ -145,6 +147,10 @@ function Admin() {
             <div className="bg-white rounded-xl shadow p-6 text-center">
               <div className="text-5xl font-bold text-blue-500 mb-2">{poruke?.length || 0}</div>
               <p className="text-gray-600 font-medium">Kontakt poruka</p>
+            </div>
+            <div className="bg-white rounded-xl shadow p-6 text-center">
+              <div className="text-5xl font-bold text-purple-500 mb-2">{zahtjevi?.length || 0}</div>
+              <p className="text-gray-600 font-medium">Zahtjeva za plan</p>
             </div>
           </div>
         )}
@@ -254,6 +260,32 @@ function Admin() {
                   <p className="text-sm text-gray-500 mb-1">📧 {poruka.email}</p>
                   <p className="text-sm text-gray-500 mb-3">📌 {poruka.predmet}</p>
                   <p className="text-gray-700">{poruka.poruka}</p>
+                </div>
+              ))
+            )}
+          </div>
+        )}
+
+        {/* Zahtjevi za plan */}
+        {prikaz === 'zahtjevi' && (
+          <div className="flex flex-col gap-4">
+            {zahtjevi?.length === 0 ? (
+              <p className="text-center text-gray-500 py-10">Nema zahtjeva za plan ishrane.</p>
+            ) : (
+              zahtjevi?.map((zahtjev, index) => (
+                <div key={index} className="bg-white rounded-xl shadow p-6">
+                  <div className="flex justify-between mb-2">
+                    <h3 className="font-bold text-gray-800">{zahtjev.korisnikIme}</h3>
+                    <span className={`text-xs px-2 py-1 rounded-full font-semibold
+                      ${zahtjev.status === 'na čekanju' ? 'bg-orange-100 text-orange-600' : 'bg-green-100 text-green-600'}`}>
+                      {zahtjev.status}
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-500 mb-1">📧 {zahtjev.korisnikEmail}</p>
+                  <p className="text-sm text-gray-500 mb-3">
+                    📅 {new Date(zahtjev.datum).toLocaleDateString('bs-BA')}
+                  </p>
+                  <p className="text-gray-700 bg-gray-50 p-3 rounded-lg">{zahtjev.poruka}</p>
                 </div>
               ))
             )}

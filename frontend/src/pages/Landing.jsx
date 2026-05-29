@@ -19,7 +19,7 @@ function Landing() {
   }, [])
 
   return (
-    <div>
+    <div className="fade-in">
       {/* Hero sekcija */}
       <section
         className="relative text-white py-24 px-6 text-center"

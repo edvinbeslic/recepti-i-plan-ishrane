@@ -1,6 +1,6 @@
 function ONama() {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-6">
+    <div className="min-h-screen bg-gray-50 py-16 px-6 fade-in">
       <div className="max-w-4xl mx-auto">
 
         {/* Header */}

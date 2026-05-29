@@ -8,6 +8,7 @@ function PlanIshrane() {
   const { korisnik } = useAuth()
   const { data: plan, loading, greska } = useFetch('http://localhost:3001/planIshrane/1')
   const { data: recepti } = useFetch('http://localhost:3001/recepti')
+  const { data: zahtjevi } = useFetch('http://localhost:3001/zahtjeviZaPlan')
   const [toast, setToast] = useState(null)
   const [zahtjevPoslan, setZahtjevPoslan] = useState(false)
   const [poruka, setPoruka] = useState('')
@@ -17,6 +18,8 @@ function PlanIshrane() {
   const obrociNazivi = { dorucak: '🍳 Doručak', rucak: '🍽️ Ručak', vecera: '🌙 Večera' }
 
   const getRecept = (id) => recepti?.find(r => r.id === id || r.id === String(id))
+
+  const mojZahtjev = zahtjevi?.filter(z => z.korisnikId === korisnik?.id).pop()
 
   const handleZahtjev = async (e) => {
     e.preventDefault()
@@ -50,7 +53,7 @@ function PlanIshrane() {
   )
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-6">
+    <div className="min-h-screen bg-gray-50 py-10 px-6 fade-in">
       {toast && (
         <Toast
           poruka={toast.poruka}
@@ -73,8 +76,33 @@ function PlanIshrane() {
             <p className="text-gray-500 text-sm mb-4">
               Pošaljite zahtjev adminu za kreiranje vašeg personalnog plana ishrane.
             </p>
-            {zahtjevPoslan ? (
-              <div className="bg-green-50 text-green-700 p-4 rounded-lg">
+
+            {/* Prikaz statusa ako postoji zahtjev */}
+            {mojZahtjev ? (
+              <div className={`p-4 rounded-lg ${
+                mojZahtjev.status === 'na čekanju' ? 'bg-orange-50 border border-orange-200' :
+                mojZahtjev.status === 'u obradi' ? 'bg-blue-50 border border-blue-200' :
+                'bg-green-50 border border-green-200'
+              }`}>
+                <div className="flex items-center gap-2 mb-1">
+                  <span>
+                    {mojZahtjev.status === 'na čekanju' ? '⏳' :
+                     mojZahtjev.status === 'u obradi' ? '🔄' : '✅'}
+                  </span>
+                  <span className={`font-semibold capitalize ${
+                    mojZahtjev.status === 'na čekanju' ? 'text-orange-600' :
+                    mojZahtjev.status === 'u obradi' ? 'text-blue-600' :
+                    'text-green-600'
+                  }`}>
+                    Status: {mojZahtjev.status}
+                  </span>
+                </div>
+                <p className="text-sm text-gray-500">
+                  Poslan: {new Date(mojZahtjev.datum).toLocaleDateString('bs-BA')}
+                </p>
+              </div>
+            ) : zahtjevPoslan ? (
+              <div className="bg-green-50 text-green-700 p-4 rounded-lg border border-green-200">
                 ✅ Vaš zahtjev je poslan! Admin će vas kontaktirati.
               </div>
             ) : (

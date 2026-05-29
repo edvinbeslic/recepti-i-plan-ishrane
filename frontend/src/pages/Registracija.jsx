@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import Toast from '../components/Toast'
 
 function Registracija() {
   const navigate = useNavigate()
@@ -12,7 +13,7 @@ function Registracija() {
   })
   const [greske, setGreske] = useState({})
   const [loading, setLoading] = useState(false)
-  const [uspjeh, setUspjeh] = useState(false)
+  const [toast, setToast] = useState(null)
 
   const validiraj = () => {
     const nove = {}
@@ -37,7 +38,6 @@ function Registracija() {
     setLoading(true)
 
     try {
-      // Provjeri da li email već postoji
       const provjera = await fetch(`http://localhost:3001/users?email=${forma.email}`)
       const postojeci = await provjera.json()
 
@@ -47,7 +47,6 @@ function Registracija() {
         return
       }
 
-      // Registruj korisnika
       await fetch('http://localhost:3001/users', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -59,11 +58,11 @@ function Registracija() {
         })
       })
 
-      setUspjeh(true)
+      setToast({ poruka: 'Uspješna registracija! Preusmjeravamo vas...', tip: 'uspjeh' })
       setTimeout(() => navigate('/prijava'), 2000)
 
     } catch (err) {
-      setGreske({ general: 'Greška pri povezivanju sa serverom' })
+      setToast({ poruka: 'Greška pri povezivanju sa serverom!', tip: 'greska' })
     }
 
     setLoading(false)
@@ -71,20 +70,15 @@ function Registracija() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+      {toast && (
+        <Toast
+          poruka={toast.poruka}
+          tip={toast.tip}
+          onClose={() => setToast(null)}
+        />
+      )}
       <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
         <h2 className="text-3xl font-bold text-green-800 mb-6 text-center">Registracija</h2>
-
-        {uspjeh && (
-          <div className="bg-green-100 text-green-700 p-3 rounded mb-4 text-sm">
-            ✅ Uspješna registracija! Preusmjeravamo vas na prijavu...
-          </div>
-        )}
-
-        {greske.general && (
-          <div className="bg-red-100 text-red-700 p-3 rounded mb-4 text-sm">
-            {greske.general}
-          </div>
-        )}
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
+import Toast from '../components/Toast'
 
 function Prijava() {
   const { prijava } = useAuth()
@@ -9,7 +10,7 @@ function Prijava() {
   const [forma, setForma] = useState({ email: '', lozinka: '' })
   const [greske, setGreske] = useState({})
   const [loading, setLoading] = useState(false)
-  const [greska, setGreska] = useState('')
+  const [toast, setToast] = useState(null)
 
   const validiraj = () => {
     const nove = {}
@@ -28,20 +29,20 @@ function Prijava() {
     }
 
     setLoading(true)
-    setGreska('')
 
     try {
       const res = await fetch(`http://localhost:3001/users?email=${forma.email}&lozinka=${forma.lozinka}`)
       const data = await res.json()
 
       if (data.length === 0) {
-        setGreska('Pogrešan email ili lozinka')
+        setToast({ poruka: 'Pogrešan email ili lozinka!', tip: 'greska' })
       } else {
         prijava(data[0])
-        navigate('/')
+        setToast({ poruka: 'Uspješna prijava!', tip: 'uspjeh' })
+        setTimeout(() => navigate('/'), 1500)
       }
     } catch (err) {
-      setGreska('Greška pri povezivanju sa serverom')
+      setToast({ poruka: 'Greška pri povezivanju sa serverom!', tip: 'greska' })
     }
 
     setLoading(false)
@@ -49,14 +50,15 @@ function Prijava() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+      {toast && (
+        <Toast
+          poruka={toast.poruka}
+          tip={toast.tip}
+          onClose={() => setToast(null)}
+        />
+      )}
       <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
         <h2 className="text-3xl font-bold text-green-800 mb-6 text-center">Prijava</h2>
-
-        {greska && (
-          <div className="bg-red-100 text-red-700 p-3 rounded mb-4 text-sm">
-            {greska}
-          </div>
-        )}
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>

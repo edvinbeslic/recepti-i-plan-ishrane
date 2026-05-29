@@ -266,32 +266,73 @@ function Admin() {
           </div>
         )}
 
-        {/* Zahtjevi za plan */}
-        {prikaz === 'zahtjevi' && (
-          <div className="flex flex-col gap-4">
-            {zahtjevi?.length === 0 ? (
-              <p className="text-center text-gray-500 py-10">Nema zahtjeva za plan ishrane.</p>
-            ) : (
-              zahtjevi?.map((zahtjev, index) => (
-                <div key={index} className="bg-white rounded-xl shadow p-6">
-                  <div className="flex justify-between mb-2">
-                    <h3 className="font-bold text-gray-800">{zahtjev.korisnikIme}</h3>
-                    <span className={`text-xs px-2 py-1 rounded-full font-semibold
-                      ${zahtjev.status === 'na čekanju' ? 'bg-orange-100 text-orange-600' : 'bg-green-100 text-green-600'}`}>
-                      {zahtjev.status}
-                    </span>
-                  </div>
-                  <p className="text-sm text-gray-500 mb-1">📧 {zahtjev.korisnikEmail}</p>
-                  <p className="text-sm text-gray-500 mb-3">
-                    📅 {new Date(zahtjev.datum).toLocaleDateString('bs-BA')}
-                  </p>
-                  <p className="text-gray-700 bg-gray-50 p-3 rounded-lg">{zahtjev.poruka}</p>
-                </div>
-              ))
-            )}
+      {/* Zahtjevi za plan */}
+{prikaz === 'zahtjevi' && (
+  <div className="flex flex-col gap-4">
+    {zahtjevi?.length === 0 ? (
+      <p className="text-center text-gray-500 py-10">Nema zahtjeva za plan ishrane.</p>
+    ) : (
+      zahtjevi?.map((zahtjev, index) => (
+        <div key={index} className="bg-white rounded-xl shadow p-6">
+          <div className="flex justify-between mb-2">
+            <h3 className="font-bold text-gray-800">{zahtjev.korisnikIme}</h3>
+            <span className={`text-xs px-2 py-1 rounded-full font-semibold
+              ${zahtjev.status === 'na čekanju' ? 'bg-orange-100 text-orange-600' :
+                zahtjev.status === 'u obradi' ? 'bg-blue-100 text-blue-600' :
+                'bg-green-100 text-green-600'}`}>
+              {zahtjev.status}
+            </span>
           </div>
-        )}
-
+          <p className="text-sm text-gray-500 mb-1">📧 {zahtjev.korisnikEmail}</p>
+          <p className="text-sm text-gray-500 mb-3">
+            📅 {new Date(zahtjev.datum).toLocaleDateString('bs-BA')}
+          </p>
+          <p className="text-gray-700 bg-gray-50 p-3 rounded-lg mb-4">{zahtjev.poruka}</p>
+          <div className="flex gap-2">
+            <button
+              onClick={async () => {
+                await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+                  method: 'PATCH',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ status: 'u obradi' })
+                })
+                window.location.reload()
+              }}
+              className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm transition"
+            >
+              U obradi
+            </button>
+            <button
+              onClick={async () => {
+                await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+                  method: 'PATCH',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ status: 'završeno' })
+                })
+                window.location.reload()
+              }}
+              className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm transition"
+            >
+              Završeno
+            </button>
+            <button
+              onClick={async () => {
+                if (!window.confirm('Jeste li sigurni da želite obrisati ovaj zahtjev?')) return
+                await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+                  method: 'DELETE'
+                })
+                window.location.reload()
+              }}
+              className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm transition"
+            >
+              Obriši
+            </button>
+          </div>
+        </div>
+      ))
+    )}
+  </div>
+)}
         {/* Forma za dodavanje/uređivanje */}
         {(prikaz === 'dodaj' || prikaz === 'uredi') && (
           <div className="bg-white rounded-xl shadow p-8">

@@ -13,6 +13,13 @@
       "email": "gost@recepti.ba",
       "lozinka": "gost123",
       "uloga": "guest"
+    },
+    {
+      "ime": "altan",
+      "email": "altan@gmail.com",
+      "lozinka": "altan1",
+      "uloga": "guest",
+      "id": "d3gZCivh_fw"
     }
   ],
   "recepti": [
@@ -125,7 +132,7 @@
       "autorId": 1
     },
     {
-      "id": 7,
+      "id": "7",
       "naziv": "Palačinke sa medom",
       "kategorija": "doručak",
       "sastojci": [
@@ -140,7 +147,7 @@
       "autorId": 1
     },
     {
-      "id": 8,
+      "id": "8",
       "naziv": "Ovsena kaša sa voćem",
       "kategorija": "doručak",
       "sastojci": [
@@ -155,7 +162,7 @@
       "autorId": 1
     },
     {
-      "id": 9,
+      "id": "9",
       "naziv": "Jaja na oko",
       "kategorija": "doručak",
       "sastojci": [
@@ -170,7 +177,7 @@
       "autorId": 1
     },
     {
-      "id": 10,
+      "id": "10",
       "naziv": "Francuski tost",
       "kategorija": "doručak",
       "sastojci": [
@@ -185,7 +192,7 @@
       "autorId": 1
     },
     {
-      "id": 11,
+      "id": "11",
       "naziv": "Granola sa jogurtom",
       "kategorija": "doručak",
       "sastojci": [
@@ -200,7 +207,7 @@
       "autorId": 1
     },
     {
-      "id": 12,
+      "id": "12",
       "naziv": "Omlet sa sirom",
       "kategorija": "doručak",
       "sastojci": [
@@ -215,7 +222,7 @@
       "autorId": 1
     },
     {
-      "id": 13,
+      "id": "13",
       "naziv": "Tost sa avokadom",
       "kategorija": "doručak",
       "sastojci": [
@@ -230,7 +237,7 @@
       "autorId": 1
     },
     {
-      "id": 14,
+      "id": "14",
       "naziv": "Muesli sa mlijekom",
       "kategorija": "doručak",
       "sastojci": [
@@ -245,7 +252,7 @@
       "autorId": 1
     },
     {
-      "id": 15,
+      "id": "15",
       "naziv": "Kajgana sa povrćem",
       "kategorija": "doručak",
       "sastojci": [
@@ -260,7 +267,7 @@
       "autorId": 1
     },
     {
-      "id": 16,
+      "id": "16",
       "naziv": "Crepes sa Nutellom",
       "kategorija": "doručak",
       "sastojci": [
@@ -275,7 +282,7 @@
       "autorId": 1
     },
     {
-      "id": 17,
+      "id": "17",
       "naziv": "Bagel sa sirom",
       "kategorija": "doručak",
       "sastojci": [
@@ -290,7 +297,7 @@
       "autorId": 1
     },
     {
-      "id": 18,
+      "id": "18",
       "naziv": "Banana pancakes",
       "kategorija": "doručak",
       "sastojci": [
@@ -305,7 +312,7 @@
       "autorId": 1
     },
     {
-      "id": 19,
+      "id": "19",
       "naziv": "Waffles sa sirupom",
       "kategorija": "doručak",
       "sastojci": [
@@ -320,7 +327,7 @@
       "autorId": 1
     },
     {
-      "id": 20,
+      "id": "20",
       "naziv": "Proteinski smoothie",
       "kategorija": "doručak",
       "sastojci": [
@@ -335,7 +342,7 @@
       "autorId": 1
     },
     {
-      "id": 21,
+      "id": "21",
       "naziv": "Chia pudding",
       "kategorija": "doručak",
       "sastojci": [
@@ -350,7 +357,7 @@
       "autorId": 1
     },
     {
-      "id": 22,
+      "id": "22",
       "naziv": "Skuta sa voćem",
       "kategorija": "doručak",
       "sastojci": [
@@ -365,7 +372,7 @@
       "autorId": 1
     },
     {
-      "id": 23,
+      "id": "23",
       "naziv": "Kukuruzna kaša",
       "kategorija": "doručak",
       "sastojci": [
@@ -380,7 +387,7 @@
       "autorId": 1
     },
     {
-      "id": 24,
+      "id": "24",
       "naziv": "Burek sa sirom",
       "kategorija": "doručak",
       "sastojci": [
@@ -395,7 +402,7 @@
       "autorId": 1
     },
     {
-      "id": 25,
+      "id": "25",
       "naziv": "Pita sa jabukama",
       "kategorija": "doručak",
       "sastojci": [
@@ -410,7 +417,7 @@
       "autorId": 1
     },
     {
-      "id": 26,
+      "id": "26",
       "naziv": "Kifle sa džemom",
       "kategorija": "doručak",
       "sastojci": [
@@ -425,7 +432,7 @@
       "autorId": 1
     },
     {
-      "id": 27,
+      "id": "27",
       "naziv": "Pecivo sa maslacem",
       "kategorija": "doručak",
       "sastojci": [
@@ -440,7 +447,7 @@
       "autorId": 1
     },
     {
-      "id": 28,
+      "id": "28",
       "naziv": "Domaći jogurt",
       "kategorija": "doručak",
       "sastojci": [
@@ -455,7 +462,7 @@
       "autorId": 1
     },
     {
-      "id": 29,
+      "id": "29",
       "naziv": "Proja sa sirom",
       "kategorija": "doručak",
       "sastojci": [
@@ -470,7 +477,7 @@
       "autorId": 1
     },
     {
-      "id": 30,
+      "id": "30",
       "naziv": "Palenta sa mlijekom",
       "kategorija": "doručak",
       "sastojci": [
@@ -485,7 +492,7 @@
       "autorId": 1
     },
     {
-      "id": 31,
+      "id": "31",
       "naziv": "Zobena kaša s bananom",
       "kategorija": "doručak",
       "sastojci": [
@@ -500,7 +507,7 @@
       "autorId": 1
     },
     {
-      "id": 32,
+      "id": "32",
       "naziv": "Goveđa čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -515,7 +522,7 @@
       "autorId": 1
     },
     {
-      "id": 33,
+      "id": "33",
       "naziv": "Minestrone",
       "kategorija": "juha",
       "sastojci": [
@@ -530,7 +537,7 @@
       "autorId": 1
     },
     {
-      "id": 34,
+      "id": "34",
       "naziv": "Cream of tomato",
       "kategorija": "juha",
       "sastojci": [
@@ -545,7 +552,7 @@
       "autorId": 1
     },
     {
-      "id": 35,
+      "id": "35",
       "naziv": "Lećina čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -560,7 +567,7 @@
       "autorId": 1
     },
     {
-      "id": 36,
+      "id": "36",
       "naziv": "Grahova čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -575,7 +582,7 @@
       "autorId": 1
     },
     {
-      "id": 37,
+      "id": "37",
       "naziv": "Pasulj čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -590,7 +597,7 @@
       "autorId": 1
     },
     {
-      "id": 38,
+      "id": "38",
       "naziv": "Riblja čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -605,7 +612,7 @@
       "autorId": 1
     },
     {
-      "id": 39,
+      "id": "39",
       "naziv": "Kisela čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -620,7 +627,7 @@
       "autorId": 1
     },
     {
-      "id": 40,
+      "id": "40",
       "naziv": "Zelena čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -635,7 +642,7 @@
       "autorId": 1
     },
     {
-      "id": 41,
+      "id": "41",
       "naziv": "Čorba od povrća",
       "kategorija": "juha",
       "sastojci": [
@@ -650,7 +657,7 @@
       "autorId": 1
     },
     {
-      "id": 42,
+      "id": "42",
       "naziv": "Krompir čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -665,7 +672,7 @@
       "autorId": 1
     },
     {
-      "id": 43,
+      "id": "43",
       "naziv": "Šargarepa čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -680,7 +687,7 @@
       "autorId": 1
     },
     {
-      "id": 44,
+      "id": "44",
       "naziv": "Tikvica čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -695,7 +702,7 @@
       "autorId": 1
     },
     {
-      "id": 45,
+      "id": "45",
       "naziv": "Brokula čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -710,7 +717,7 @@
       "autorId": 1
     },
     {
-      "id": 46,
+      "id": "46",
       "naziv": "Grašak čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -725,7 +732,7 @@
       "autorId": 1
     },
     {
-      "id": 47,
+      "id": "47",
       "naziv": "Spanać čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -740,7 +747,7 @@
       "autorId": 1
     },
     {
-      "id": 48,
+      "id": "48",
       "naziv": "Bundeva čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -755,7 +762,7 @@
       "autorId": 1
     },
     {
-      "id": 49,
+      "id": "49",
       "naziv": "Luk čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -770,7 +777,7 @@
       "autorId": 1
     },
     {
-      "id": 50,
+      "id": "50",
       "naziv": "Čorba od sočiva",
       "kategorija": "juha",
       "sastojci": [
@@ -785,7 +792,7 @@
       "autorId": 1
     },
     {
-      "id": 51,
+      "id": "51",
       "naziv": "Gazpacho",
       "kategorija": "juha",
       "sastojci": [
@@ -800,7 +807,7 @@
       "autorId": 1
     },
     {
-      "id": 52,
+      "id": "52",
       "naziv": "Tom yum",
       "kategorija": "juha",
       "sastojci": [
@@ -815,7 +822,7 @@
       "autorId": 1
     },
     {
-      "id": 53,
+      "id": "53",
       "naziv": "Miso čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -830,7 +837,7 @@
       "autorId": 1
     },
     {
-      "id": 54,
+      "id": "54",
       "naziv": "Čorba od pečurki",
       "kategorija": "juha",
       "sastojci": [
@@ -845,7 +852,7 @@
       "autorId": 1
     },
     {
-      "id": 55,
+      "id": "55",
       "naziv": "Čorba od celera",
       "kategorija": "juha",
       "sastojci": [
@@ -860,7 +867,7 @@
       "autorId": 1
     },
     {
-      "id": 56,
+      "id": "56",
       "naziv": "Čorba od kelja",
       "kategorija": "juha",
       "sastojci": [
@@ -875,7 +882,7 @@
       "autorId": 1
     },
     {
-      "id": 57,
+      "id": "57",
       "naziv": "Pečena piletina",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -890,7 +897,7 @@
       "autorId": 1
     },
     {
-      "id": 58,
+      "id": "58",
       "naziv": "Goveđi gulaš",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -905,7 +912,7 @@
       "autorId": 1
     },
     {
-      "id": 59,
+      "id": "59",
       "naziv": "Punjene paprike",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -920,7 +927,7 @@
       "autorId": 1
     },
     {
-      "id": 60,
+      "id": "60",
       "naziv": "Musaka",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -935,7 +942,7 @@
       "autorId": 1
     },
     {
-      "id": 61,
+      "id": "61",
       "naziv": "Bosanski lonac",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -950,7 +957,7 @@
       "autorId": 1
     },
     {
-      "id": 62,
+      "id": "62",
       "naziv": "Ćevapi",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -965,7 +972,7 @@
       "autorId": 1
     },
     {
-      "id": 63,
+      "id": "63",
       "naziv": "Pljeskavica",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -980,7 +987,7 @@
       "autorId": 1
     },
     {
-      "id": 64,
+      "id": "64",
       "naziv": "Burek sa mesom",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -995,7 +1002,7 @@
       "autorId": 1
     },
     {
-      "id": 65,
+      "id": "65",
       "naziv": "Pečena svinjetina",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1010,7 +1017,7 @@
       "autorId": 1
     },
     {
-      "id": 66,
+      "id": "66",
       "naziv": "Janjetina ispod sača",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1025,7 +1032,7 @@
       "autorId": 1
     },
     {
-      "id": 67,
+      "id": "67",
       "naziv": "Riba na žaru",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1040,7 +1047,7 @@
       "autorId": 1
     },
     {
-      "id": 68,
+      "id": "68",
       "naziv": "Losos u rerni",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1055,7 +1062,7 @@
       "autorId": 1
     },
     {
-      "id": 69,
+      "id": "69",
       "naziv": "Tuna pasta",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1070,7 +1077,7 @@
       "autorId": 1
     },
     {
-      "id": 70,
+      "id": "70",
       "naziv": "Carbonara",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1085,7 +1092,7 @@
       "autorId": 1
     },
     {
-      "id": 71,
+      "id": "71",
       "naziv": "Bolognese",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1100,7 +1107,7 @@
       "autorId": 1
     },
     {
-      "id": 72,
+      "id": "72",
       "naziv": "Risotto",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1115,7 +1122,7 @@
       "autorId": 1
     },
     {
-      "id": 73,
+      "id": "73",
       "naziv": "Lazanje",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1130,7 +1137,7 @@
       "autorId": 1
     },
     {
-      "id": 74,
+      "id": "74",
       "naziv": "Pica Margherita",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1145,7 +1152,7 @@
       "autorId": 1
     },
     {
-      "id": 75,
+      "id": "75",
       "naziv": "Vegetarijanski burger",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1160,7 +1167,7 @@
       "autorId": 1
     },
     {
-      "id": 76,
+      "id": "76",
       "naziv": "Falafel",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1175,7 +1182,7 @@
       "autorId": 1
     },
     {
-      "id": 77,
+      "id": "77",
       "naziv": "Šiš ćevap",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1190,7 +1197,7 @@
       "autorId": 1
     },
     {
-      "id": 78,
+      "id": "78",
       "naziv": "Meso na žaru",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1205,7 +1212,7 @@
       "autorId": 1
     },
     {
-      "id": 79,
+      "id": "79",
       "naziv": "Punjene tikvice",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1220,7 +1227,7 @@
       "autorId": 1
     },
     {
-      "id": 80,
+      "id": "80",
       "naziv": "Sarma",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1235,7 +1242,7 @@
       "autorId": 1
     },
     {
-      "id": 81,
+      "id": "81",
       "naziv": "Japrak",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1250,7 +1257,7 @@
       "autorId": 1
     },
     {
-      "id": 82,
+      "id": "82",
       "naziv": "Cezar salata",
       "kategorija": "salata",
       "sastojci": [
@@ -1265,7 +1272,7 @@
       "autorId": 1
     },
     {
-      "id": 83,
+      "id": "83",
       "naziv": "Nicoise salata",
       "kategorija": "salata",
       "sastojci": [
@@ -1280,7 +1287,7 @@
       "autorId": 1
     },
     {
-      "id": 84,
+      "id": "84",
       "naziv": "Caprese salata",
       "kategorija": "salata",
       "sastojci": [
@@ -1295,7 +1302,7 @@
       "autorId": 1
     },
     {
-      "id": 85,
+      "id": "85",
       "naziv": "Tabule",
       "kategorija": "salata",
       "sastojci": [
@@ -1310,7 +1317,7 @@
       "autorId": 1
     },
     {
-      "id": 86,
+      "id": "86",
       "naziv": "Coleslaw",
       "kategorija": "salata",
       "sastojci": [
@@ -1325,7 +1332,7 @@
       "autorId": 1
     },
     {
-      "id": 87,
+      "id": "87",
       "naziv": "Ruska salata",
       "kategorija": "salata",
       "sastojci": [
@@ -1340,7 +1347,7 @@
       "autorId": 1
     },
     {
-      "id": 88,
+      "id": "88",
       "naziv": "Šopska salata",
       "kategorija": "salata",
       "sastojci": [
@@ -1355,7 +1362,7 @@
       "autorId": 1
     },
     {
-      "id": 89,
+      "id": "89",
       "naziv": "Sezonska salata",
       "kategorija": "salata",
       "sastojci": [
@@ -1370,7 +1377,7 @@
       "autorId": 1
     },
     {
-      "id": 90,
+      "id": "90",
       "naziv": "Salata od cvekle",
       "kategorija": "salata",
       "sastojci": [
@@ -1385,7 +1392,7 @@
       "autorId": 1
     },
     {
-      "id": 91,
+      "id": "91",
       "naziv": "Salata od kukuruza",
       "kategorija": "salata",
       "sastojci": [
@@ -1400,7 +1407,7 @@
       "autorId": 1
     },
     {
-      "id": 92,
+      "id": "92",
       "naziv": "Zelena salata",
       "kategorija": "salata",
       "sastojci": [
@@ -1415,7 +1422,7 @@
       "autorId": 1
     },
     {
-      "id": 93,
+      "id": "93",
       "naziv": "Salata od tune",
       "kategorija": "salata",
       "sastojci": [
@@ -1430,7 +1437,7 @@
       "autorId": 1
     },
     {
-      "id": 94,
+      "id": "94",
       "naziv": "Salata od piletine",
       "kategorija": "salata",
       "sastojci": [
@@ -1445,7 +1452,7 @@
       "autorId": 1
     },
     {
-      "id": 95,
+      "id": "95",
       "naziv": "Salata od pasulja",
       "kategorija": "salata",
       "sastojci": [
@@ -1460,7 +1467,7 @@
       "autorId": 1
     },
     {
-      "id": 96,
+      "id": "96",
       "naziv": "Salata od sočiva",
       "kategorija": "salata",
       "sastojci": [
@@ -1475,7 +1482,7 @@
       "autorId": 1
     },
     {
-      "id": 97,
+      "id": "97",
       "naziv": "Waldorf salata",
       "kategorija": "salata",
       "sastojci": [
@@ -1490,7 +1497,7 @@
       "autorId": 1
     },
     {
-      "id": 98,
+      "id": "98",
       "naziv": "Salata od krastavaca",
       "kategorija": "salata",
       "sastojci": [
@@ -1505,7 +1512,7 @@
       "autorId": 1
     },
     {
-      "id": 99,
+      "id": "99",
       "naziv": "Salata od paradajza",
       "kategorija": "salata",
       "sastojci": [
@@ -1520,7 +1527,7 @@
       "autorId": 1
     },
     {
-      "id": 100,
+      "id": "100",
       "naziv": "Salata od rotkvica",
       "kategorija": "salata",
       "sastojci": [
@@ -1535,7 +1542,7 @@
       "autorId": 1
     },
     {
-      "id": 101,
+      "id": "101",
       "naziv": "Mješana salata",
       "kategorija": "salata",
       "sastojci": [
@@ -1550,7 +1557,7 @@
       "autorId": 1
     },
     {
-      "id": 102,
+      "id": "102",
       "naziv": "Salata od avokada",
       "kategorija": "salata",
       "sastojci": [
@@ -1565,7 +1572,7 @@
       "autorId": 1
     },
     {
-      "id": 103,
+      "id": "103",
       "naziv": "Insalata mista",
       "kategorija": "salata",
       "sastojci": [
@@ -1580,7 +1587,7 @@
       "autorId": 1
     },
     {
-      "id": 104,
+      "id": "104",
       "naziv": "Fattoush",
       "kategorija": "salata",
       "sastojci": [
@@ -1595,7 +1602,7 @@
       "autorId": 1
     },
     {
-      "id": 105,
+      "id": "105",
       "naziv": "Panzanella",
       "kategorija": "salata",
       "sastojci": [
@@ -1610,7 +1617,7 @@
       "autorId": 1
     },
     {
-      "id": 106,
+      "id": "106",
       "naziv": "Salata od špinata",
       "kategorija": "salata",
       "sastojci": [
@@ -1625,7 +1632,7 @@
       "autorId": 1
     },
     {
-      "id": 107,
+      "id": "107",
       "naziv": "Pileći šnitzel",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1640,7 +1647,7 @@
       "autorId": 1
     },
     {
-      "id": 108,
+      "id": "108",
       "naziv": "Svinjski kotlet",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1655,7 +1662,7 @@
       "autorId": 1
     },
     {
-      "id": 109,
+      "id": "109",
       "naziv": "Punjeni šampinjoni",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1670,7 +1677,7 @@
       "autorId": 1
     },
     {
-      "id": 110,
+      "id": "110",
       "naziv": "Povrće na žaru",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1685,7 +1692,7 @@
       "autorId": 1
     },
     {
-      "id": 111,
+      "id": "111",
       "naziv": "Goveđi odrezak",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1700,7 +1707,7 @@
       "autorId": 1
     },
     {
-      "id": 112,
+      "id": "112",
       "naziv": "Pileći curry",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1715,7 +1722,7 @@
       "autorId": 1
     },
     {
-      "id": 113,
+      "id": "113",
       "naziv": "Pad thai",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1730,7 +1737,7 @@
       "autorId": 1
     },
     {
-      "id": 114,
+      "id": "114",
       "naziv": "Sushi rolice",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1745,7 +1752,7 @@
       "autorId": 1
     },
     {
-      "id": 115,
+      "id": "115",
       "naziv": "Tacos sa piletinom",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1760,7 +1767,7 @@
       "autorId": 1
     },
     {
-      "id": 116,
+      "id": "116",
       "naziv": "Burrito sa goveđim mesom",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -1775,7 +1782,7 @@
       "autorId": 1
     },
     {
-      "id": 117,
+      "id": "117",
       "naziv": "Čorba od tikvica",
       "kategorija": "juha",
       "sastojci": [
@@ -1790,7 +1797,7 @@
       "autorId": 1
     },
     {
-      "id": 118,
+      "id": "118",
       "naziv": "Čorba od artičoke",
       "kategorija": "juha",
       "sastojci": [
@@ -1805,7 +1812,7 @@
       "autorId": 1
     },
     {
-      "id": 119,
+      "id": "119",
       "naziv": "Čorba od batata",
       "kategorija": "juha",
       "sastojci": [
@@ -1820,7 +1827,7 @@
       "autorId": 1
     },
     {
-      "id": 120,
+      "id": "120",
       "naziv": "Čorba od jagnjećeg mesa",
       "kategorija": "juha",
       "sastojci": [
@@ -1835,7 +1842,7 @@
       "autorId": 1
     },
     {
-      "id": 121,
+      "id": "121",
       "naziv": "Čorba od morskih plodova",
       "kategorija": "juha",
       "sastojci": [
@@ -1850,7 +1857,7 @@
       "autorId": 1
     },
     {
-      "id": 122,
+      "id": "122",
       "naziv": "Čorba od pilećih krilca",
       "kategorija": "juha",
       "sastojci": [
@@ -1865,7 +1872,7 @@
       "autorId": 1
     },
     {
-      "id": 123,
+      "id": "123",
       "naziv": "Čorba od poriluka",
       "kategorija": "juha",
       "sastojci": [
@@ -1880,7 +1887,7 @@
       "autorId": 1
     },
     {
-      "id": 124,
+      "id": "124",
       "naziv": "Čorba od ječma",
       "kategorija": "juha",
       "sastojci": [
@@ -1895,7 +1902,7 @@
       "autorId": 1
     },
     {
-      "id": 125,
+      "id": "125",
       "naziv": "Čorba od raži",
       "kategorija": "juha",
       "sastojci": [
@@ -1910,7 +1917,7 @@
       "autorId": 1
     },
     {
-      "id": 126,
+      "id": "126",
       "naziv": "Čorba od kukuruza",
       "kategorija": "juha",
       "sastojci": [
@@ -1925,7 +1932,7 @@
       "autorId": 1
     },
     {
-      "id": 127,
+      "id": "127",
       "naziv": "Acai bowl",
       "kategorija": "doručak",
       "sastojci": [
@@ -1940,7 +1947,7 @@
       "autorId": 1
     },
     {
-      "id": 128,
+      "id": "128",
       "naziv": "Egg benedikt",
       "kategorija": "doručak",
       "sastojci": [
@@ -1955,7 +1962,7 @@
       "autorId": 1
     },
     {
-      "id": 129,
+      "id": "129",
       "naziv": "Avokado tost sa jajetom",
       "kategorija": "doručak",
       "sastojci": [
@@ -1970,7 +1977,7 @@
       "autorId": 1
     },
     {
-      "id": 130,
+      "id": "130",
       "naziv": "Blueberry muffini",
       "kategorija": "doručak",
       "sastojci": [
@@ -1985,7 +1992,7 @@
       "autorId": 1
     },
     {
-      "id": 131,
+      "id": "131",
       "naziv": "Kokosova kaša",
       "kategorija": "doručak",
       "sastojci": [
@@ -2000,7 +2007,7 @@
       "autorId": 1
     },
     {
-      "id": 132,
+      "id": "132",
       "naziv": "Proteinske palačinke",
       "kategorija": "doručak",
       "sastojci": [
@@ -2015,7 +2022,7 @@
       "autorId": 1
     },
     {
-      "id": 133,
+      "id": "133",
       "naziv": "Grčki jogurt sa granolom",
       "kategorija": "doručak",
       "sastojci": [
@@ -2030,7 +2037,7 @@
       "autorId": 1
     },
     {
-      "id": 134,
+      "id": "134",
       "naziv": "Tost sa kikiriki maslacem",
       "kategorija": "doručak",
       "sastojci": [
@@ -2045,7 +2052,7 @@
       "autorId": 1
     },
     {
-      "id": 135,
+      "id": "135",
       "naziv": "Voćna salata",
       "kategorija": "doručak",
       "sastojci": [
@@ -2060,7 +2067,7 @@
       "autorId": 1
     },
     {
-      "id": 136,
+      "id": "136",
       "naziv": "Domaći krekeri sa sirom",
       "kategorija": "doručak",
       "sastojci": [
@@ -2075,7 +2082,7 @@
       "autorId": 1
     },
     {
-      "id": 137,
+      "id": "137",
       "naziv": "Salata od radiča",
       "kategorija": "salata",
       "sastojci": [
@@ -2090,7 +2097,7 @@
       "autorId": 1
     },
     {
-      "id": 138,
+      "id": "138",
       "naziv": "Salata od endivije",
       "kategorija": "salata",
       "sastojci": [
@@ -2105,7 +2112,7 @@
       "autorId": 1
     },
     {
-      "id": 139,
+      "id": "139",
       "naziv": "Salata od manga",
       "kategorija": "salata",
       "sastojci": [
@@ -2120,7 +2127,7 @@
       "autorId": 1
     },
     {
-      "id": 140,
+      "id": "140",
       "naziv": "Salata od naranče",
       "kategorija": "salata",
       "sastojci": [
@@ -2135,7 +2142,7 @@
       "autorId": 1
     },
     {
-      "id": 141,
+      "id": "141",
       "naziv": "Salata od jagoda",
       "kategorija": "salata",
       "sastojci": [
@@ -2150,7 +2157,7 @@
       "autorId": 1
     },
     {
-      "id": 142,
+      "id": "142",
       "naziv": "Salata od grožđa",
       "kategorija": "salata",
       "sastojci": [
@@ -2165,7 +2172,7 @@
       "autorId": 1
     },
     {
-      "id": 143,
+      "id": "143",
       "naziv": "Salata od kruške",
       "kategorija": "salata",
       "sastojci": [
@@ -2180,7 +2187,7 @@
       "autorId": 1
     },
     {
-      "id": 144,
+      "id": "144",
       "naziv": "Salata od smokve",
       "kategorija": "salata",
       "sastojci": [
@@ -2195,7 +2202,7 @@
       "autorId": 1
     },
     {
-      "id": 145,
+      "id": "145",
       "naziv": "Salata od graška",
       "kategorija": "salata",
       "sastojci": [
@@ -2210,7 +2217,7 @@
       "autorId": 1
     },
     {
-      "id": 146,
+      "id": "146",
       "naziv": "Salata od brokolija",
       "kategorija": "salata",
       "sastojci": [
@@ -2225,7 +2232,7 @@
       "autorId": 1
     },
     {
-      "id": 147,
+      "id": "147",
       "naziv": "Salata od karfiola",
       "kategorija": "salata",
       "sastojci": [
@@ -2240,7 +2247,7 @@
       "autorId": 1
     },
     {
-      "id": 148,
+      "id": "148",
       "naziv": "Salata od tikvice",
       "kategorija": "salata",
       "sastojci": [
@@ -2255,7 +2262,7 @@
       "autorId": 1
     },
     {
-      "id": 149,
+      "id": "149",
       "naziv": "Salata od patlidžana",
       "kategorija": "salata",
       "sastojci": [
@@ -2270,7 +2277,7 @@
       "autorId": 1
     },
     {
-      "id": 150,
+      "id": "150",
       "naziv": "Salata od paprike",
       "kategorija": "salata",
       "sastojci": [
@@ -2285,7 +2292,7 @@
       "autorId": 1
     },
     {
-      "id": 151,
+      "id": "151",
       "naziv": "Salata od kupusa",
       "kategorija": "salata",
       "sastojci": [
@@ -2300,7 +2307,7 @@
       "autorId": 1
     },
     {
-      "id": 152,
+      "id": "152",
       "naziv": "Salata od kelja",
       "kategorija": "salata",
       "sastojci": [
@@ -2315,7 +2322,7 @@
       "autorId": 1
     },
     {
-      "id": 153,
+      "id": "153",
       "naziv": "Salata od kvinoje",
       "kategorija": "salata",
       "sastojci": [
@@ -2330,7 +2337,7 @@
       "autorId": 1
     },
     {
-      "id": 154,
+      "id": "154",
       "naziv": "Salata od heljde",
       "kategorija": "salata",
       "sastojci": [
@@ -2345,7 +2352,7 @@
       "autorId": 1
     },
     {
-      "id": 155,
+      "id": "155",
       "naziv": "Salata od amaranta",
       "kategorija": "salata",
       "sastojci": [
@@ -2360,7 +2367,7 @@
       "autorId": 1
     },
     {
-      "id": 156,
+      "id": "156",
       "naziv": "Salata od bulgura",
       "kategorija": "salata",
       "sastojci": [
@@ -2418,7 +2425,26 @@
       }
     }
   ],
-  "kontaktPoruke": [],
-  "zahtjeviZaPlan": [],
+  "kontaktPoruke": [
+    {
+      "ime": "altan",
+      "email": "altan@gmail.com",
+      "predmet": "testtestt",
+      "poruka": "teststtsst",
+      "datum": "2026-05-29T09:30:07.531Z",
+      "id": "FHTGCwTywM4"
+    }
+  ],
+  "zahtjeviZaPlan": [
+    {
+      "korisnikId": "d3gZCivh_fw",
+      "korisnikIme": "altan",
+      "korisnikEmail": "altan@gmail.com",
+      "poruka": "zelim ultra dobar plan prehrane ",
+      "status": "na čekanju",
+      "datum": "2026-05-29T09:30:19.359Z",
+      "id": "48tHDykH6Fo"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

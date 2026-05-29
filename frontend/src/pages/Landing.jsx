@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import RecipeCard from '../components/RecipeCard'
+import { useAuth } from '../hooks/useAuth'
 
 function Landing() {
+  const { korisnik } = useAuth()
   const [recepti, setRecepti] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -31,12 +33,14 @@ function Landing() {
           >
             Pregledaj recepte
           </Link>
-          <Link
-            to="/registracija"
-            className="border border-white hover:bg-green-700 px-8 py-3 rounded-lg font-semibold transition text-lg"
-          >
-            Registruj se
-          </Link>
+          {!korisnik && (
+            <Link
+              to="/registracija"
+              className="border border-white hover:bg-green-700 px-8 py-3 rounded-lg font-semibold transition text-lg"
+            >
+              Registruj se
+            </Link>
+          )}
         </div>
       </section>
 
@@ -90,19 +94,21 @@ function Landing() {
         </div>
       </section>
 
-      {/* CTA sekcija */}
-      <section className="bg-orange-500 text-white py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-4">Kreirajte svoj plan ishrane</h2>
-        <p className="text-orange-100 text-lg mb-6">
-          Registrujte se i dobijte pristup personaliziranom tjednom planu ishrane.
-        </p>
-        <Link
-          to="/registracija"
-          className="bg-white text-orange-500 hover:bg-orange-50 px-8 py-3 rounded-lg font-semibold transition"
-        >
-          Počni besplatno
-        </Link>
-      </section>
+      {/* CTA sekcija – samo za neprijavljene */}
+      {!korisnik && (
+        <section className="bg-orange-500 text-white py-16 px-6 text-center">
+          <h2 className="text-3xl font-bold mb-4">Kreirajte svoj plan ishrane</h2>
+          <p className="text-orange-100 text-lg mb-6">
+            Registrujte se i dobijte pristup personaliziranom tjednom planu ishrane.
+          </p>
+          <Link
+            to="/registracija"
+            className="bg-white text-orange-500 hover:bg-orange-50 px-8 py-3 rounded-lg font-semibold transition"
+          >
+            Počni besplatno
+          </Link>
+        </section>
+      )}
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import useFetch from '../hooks/useFetch'
 import RecipeCard from '../components/RecipeCard'
-import Spinner from '../components/Spinner'
+import SkeletonCard from '../components/SkeletonCard'
 
 const PO_STRANICI = 12
 
@@ -32,7 +32,18 @@ function Recepti() {
     setStranica(1)
   }
 
-  if (loading) return <Spinner />
+  if (loading) return (
+    <div className="min-h-screen bg-gray-50 py-10 px-6">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-4xl font-bold text-green-800 mb-8 text-center">Svi recepti</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <SkeletonCard key={i} />
+          ))}
+        </div>
+      </div>
+    </div>
+  )
 
   if (greska) return (
     <div className="min-h-screen flex items-center justify-center">

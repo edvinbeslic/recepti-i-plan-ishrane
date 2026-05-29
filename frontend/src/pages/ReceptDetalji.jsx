@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import Spinner from '../components/Spinner'
 
@@ -19,12 +19,14 @@ function ReceptDetalji() {
     <div className="min-h-screen bg-gray-50 py-10 px-6">
       <div className="max-w-4xl mx-auto">
 
-        <button
-          onClick={() => navigate(-1)}
-          className="text-green-700 hover:underline mb-6 flex items-center gap-2"
-        >
-          ← Nazad na recepte
-        </button>
+        {/* Breadcrumbs */}
+        <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6">
+          <Link to="/" className="hover:text-green-700 transition">Početna</Link>
+          <span>›</span>
+          <Link to="/recepti" className="hover:text-green-700 transition">Recepti</Link>
+          <span>›</span>
+          <span className="text-green-800 font-medium">{recept.naziv}</span>
+        </nav>
 
         <img
           src={recept.slika}

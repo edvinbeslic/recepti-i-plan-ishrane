@@ -135,8 +135,8 @@ function Kontakt() {
               <h2 className="text-xl font-bold text-green-800 mb-4">Kontakt informacije</h2>
               <div className="flex flex-col gap-3 text-gray-600">
                 <p>📧 info@recepti.ba</p>
-                <p>📞 +387 33 000 000</p>
-                <p>📍 Sarajevo, Bosna i Hercegovina</p>
+                <p>📞 +387 32 000 000</p>
+                <p>📍 Zenica, Bosna i Hercegovina</p>
                 <p>🕐 Pon - Pet: 09:00 - 17:00</p>
               </div>
             </div>
@@ -144,7 +144,7 @@ function Kontakt() {
             <div className="bg-white rounded-xl shadow overflow-hidden">
               <iframe
                 title="Lokacija"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11519.291900569!2d18.3890!3d43.8563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c93272bc6f0b%3A0x1e3a4b4a7db6a6de!2sSarajevo!5e0!3m2!1sbs!2sba!4v1620000000000!5m2!1sbs!2sba"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22829.938409!2d17.9077!3d44.2010!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ee1234567890%3A0x1234567890abcdef!2sZenica!5e0!3m2!1sbs!2sba!4v1620000000000!5m2!1sbs!2sba"
                 width="100%"
                 height="250"
                 style={{ border: 0 }}

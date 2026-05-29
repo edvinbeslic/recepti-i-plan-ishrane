@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function RecipeCard({ recept }) {
   return (
-    <div className="bg-white rounded-xl shadow hover:shadow-md transition overflow-hidden">
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition-all duration-300 overflow-hidden hover:scale-105 transform">
       <img
         src={recept.slika}
         alt={recept.naziv}

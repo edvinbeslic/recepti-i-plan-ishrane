@@ -21,26 +21,36 @@ function Landing() {
   return (
     <div>
       {/* Hero sekcija */}
-      <section className="bg-green-800 text-white py-24 px-6 text-center">
-        <h1 className="text-5xl font-bold mb-4">Zdravo kuhanje počinje ovdje</h1>
-        <p className="text-green-200 text-xl mb-8 max-w-xl mx-auto">
-          Otkrijte stotine ukusnih recepata i kreirajte personalizirani plan ishrane.
-        </p>
-        <div className="flex gap-4 justify-center">
-          <Link
-            to="/recepti"
-            className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-semibold transition text-lg"
-          >
-            Pregledaj recepte
-          </Link>
-          {!korisnik && (
+      <section
+        className="relative text-white py-24 px-6 text-center"
+        style={{
+          backgroundImage: 'url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <div className="absolute inset-0 bg-green-900 opacity-70"></div>
+        <div className="relative z-10">
+          <h1 className="text-5xl font-bold mb-4">Zdravo kuhanje počinje ovdje</h1>
+          <p className="text-green-200 text-xl mb-8 max-w-xl mx-auto">
+            Otkrijte stotine ukusnih recepata i kreirajte personalizirani plan ishrane.
+          </p>
+          <div className="flex gap-4 justify-center">
             <Link
-              to="/registracija"
-              className="border border-white hover:bg-green-700 px-8 py-3 rounded-lg font-semibold transition text-lg"
+              to="/recepti"
+              className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-semibold transition text-lg"
             >
-              Registruj se
+              Pregledaj recepte
             </Link>
-          )}
+            {!korisnik && (
+              <Link
+                to="/registracija"
+                className="border border-white hover:bg-green-700 px-8 py-3 rounded-lg font-semibold transition text-lg"
+              >
+                Registruj se
+              </Link>
+            )}
+          </div>
         </div>
       </section>
 

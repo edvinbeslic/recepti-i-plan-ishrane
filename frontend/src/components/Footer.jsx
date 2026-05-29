@@ -27,7 +27,7 @@ function Footer() {
           <h3 className="text-lg font-bold mb-3">Kontakt</h3>
           <div className="text-green-300 text-sm flex flex-col gap-2">
             <p>📧 info@recepti.ba</p>
-            <p>📍 Sarajevo, BiH</p>
+            <p>📍 Zenica, BiH</p>
           </div>
         </div>
 

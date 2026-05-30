@@ -77,8 +77,8 @@ function PlanIshrane() {
               Pošaljite zahtjev adminu za kreiranje vašeg personalnog plana ishrane.
             </p>
 
-            {/* Prikaz statusa ako postoji zahtjev */}
-            {mojZahtjev ? (
+{/* Prikaz statusa ako postoji zahtjev */}
+{mojZahtjev ? (
               <div className={`p-4 rounded-lg ${
                 mojZahtjev.status === 'na čekanju' ? 'bg-orange-50 border border-orange-200' :
                 mojZahtjev.status === 'u obradi' ? 'bg-blue-50 border border-blue-200' :
@@ -97,9 +97,15 @@ function PlanIshrane() {
                     Status: {mojZahtjev.status}
                   </span>
                 </div>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-500 mb-3">
                   Poslan: {new Date(mojZahtjev.datum).toLocaleDateString('bs-BA')}
                 </p>
+                {mojZahtjev.odgovor && (
+                  <div className="bg-white rounded-lg p-3 border border-gray-200">
+                    <p className="text-xs font-semibold text-gray-500 mb-1">💬 Poruka od admina:</p>
+                    <p className="text-gray-700 text-sm">{mojZahtjev.odgovor}</p>
+                  </div>
+                )}
               </div>
             ) : zahtjevPoslan ? (
               <div className="bg-green-50 text-green-700 p-4 rounded-lg border border-green-200">

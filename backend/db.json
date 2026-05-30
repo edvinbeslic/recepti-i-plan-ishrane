@@ -17,7 +17,6 @@
   ],
   "recepti": [
     {
-      "id": "1",
       "naziv": "Pileća čorba",
       "kategorija": "juha",
       "sastojci": [
@@ -32,11 +31,11 @@
       "upute": "Piletinu skuhajte u 2L vode. Dodajte nasjeckano povrće i kuhajte 40 minuta. Začinite solju i biberom, pospite peršunom.",
       "vremePripreme": 50,
       "kalorije": 220,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
+      "slika": "https://www.seriouseats.com/thmb/OA9APJ1aPo98jYVPfIzHPILNPJU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2017__12__20171115-chicken-soup-vicky-wasik-11-80db1a04d84a43a089e0559efdddd517.jpg",
+      "autorId": 1,
+      "id": "1"
     },
     {
-      "id": "2",
       "naziv": "Grčka salata",
       "kategorija": "salata",
       "sastojci": [
@@ -50,11 +49,11 @@
       "upute": "Nasjeckajte paradajz i krastavac. Dodajte masline i feta sir. Prelijte maslinovim uljem i pospite origanom.",
       "vremePripreme": 10,
       "kalorije": 180,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
+      "slika": "https://www.zvijezda.hr/wp-content/uploads/2009/04/grcka-salata-01.jpg",
+      "autorId": 1,
+      "id": "2"
     },
     {
-      "id": "3",
       "naziv": "Pečeni losos",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -69,28 +68,27 @@
       "upute": "Lososa začinite solju, biberom i češnjakom. Prelijte maslinovim uljem i sokom limuna. Pecite na 200°C 20 minuta.",
       "vremePripreme": 25,
       "kalorije": 350,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
+      "slika": "https://recepti-api.index.hr/img/preview/large/recipe/4ce15786-be97-461b-a95f-200d9d1acaf3/g2.jpg",
+      "autorId": 1,
+      "id": "3"
     },
     {
-      "id": "4",
       "naziv": "Overnight oats",
       "kategorija": "doručak",
       "sastojci": [
         "80g zobenih pahuljica",
         "200ml mlijeka",
-        "1 banana",
-        "med",
-        "borovnice"
+        "1 kašika meda",
+        "šaka borovnica"
       ],
-      "upute": "Pomiješajte pahuljice sa mlijekom. Ostavite u frižideru preko noći. Ujutro dodajte nasjeckanu bananu, med i borovnice.",
+      "upute": "Pomiješati zobene pahuljice sa mlijekom i medom. Pokriti i ostaviti u frižideru preko noći. Ujutro dodati borovnice i poslužiti.",
       "vremePripreme": 5,
-      "kalorije": 320,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
+      "kalorije": 310,
+      "slika": "https://i0.wp.com/beautyandthebenchpress.com/wp-content/uploads/2017/08/unnamed-13.jpg?w=800&ssl=1",
+      "autorId": 1,
+      "id": "4"
     },
     {
-      "id": "5",
       "naziv": "Pasta sa povrćem",
       "kategorija": "glavno jelo",
       "sastojci": [
@@ -104,8 +102,9 @@
       "upute": "Skuhajte pastu. Na ulju propržite nasjeckanu tikvicu i papriku. Dodajte paradajz sos i kuhajte 10 minuta. Pomiješajte sa pastom.",
       "vremePripreme": 25,
       "kalorije": 420,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
+      "slika": "https://fullofplants.com/wp-content/uploads/2023/04/quick-vegan-pasta-vegetable-stir-fry-with-ginger-and-garlic-1-1400x2100.jpg",
+      "autorId": 1,
+      "id": "5"
     },
     {
       "id": "6",
@@ -113,2266 +112,1103 @@
       "kategorija": "doručak",
       "sastojci": [
         "1 banana",
-        "100g jagoda",
-        "200ml kokosovog mlijeka",
-        "granola",
-        "chia sjemenke"
+        "100g bobičastog voća",
+        "150g jogurta",
+        "2 kašike granole"
       ],
-      "upute": "Izblendajte bananu, jagode i kokosovo mlijeko. Sipajte u zdjelu i pospite granolom i chia sjemenkama.",
-      "vremePripreme": 10,
-      "kalorije": 280,
+      "upute": "Bananu i bobičasto voće izmiksati sa jogurtom do glatke smjese. Sipati u zdjelu i posuti granolom.",
+      "vremePripreme": 8,
+      "kalorije": 260,
       "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
       "autorId": 1
     },
     {
-      "id": "7",
       "naziv": "Palačinke sa medom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "2 jaja",
+        "250 ml mlijeka",
+        "150 g brašna",
+        "prstohvat sol",
+        "i 1 kašika ulja",
+        "med za premazivanje"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
+      "upute": "Pomiješati jaja, mlijeko, brašno, so i ulje u glatku smjesu. Peći tanke palačinke na zagrijanoj tavi s obje strane. Premazati medom i poslužiti. 🥞🍯",
       "vremePripreme": 15,
       "kalorije": 394,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
+      "slika": "https://farmerowned.com/images/featuredRecipesImages/featuredRecipes1574732142.jpg",
+      "autorId": 1,
+      "id": "7"
     },
     {
-      "id": "8",
       "naziv": "Ovsena kaša sa voćem",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "50 g ovsenih pahuljica",
+        "200 ml mlijeka ili vode",
+        "1 banana",
+        "šaka bobičastog voća"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
+      "upute": "Skuhati ovsene pahuljice u mlijeku ili vodi 5–10 minuta. Dodati narezano voće i poslužiti. 🍓🥣🍌",
       "vremePripreme": 34,
       "kalorije": 400,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
+      "slika": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3iVuJ7sODkInmH1y4OlViUMn6MhgckFD_uDHoWV5OL-aaRbz9Ar3i-7cL2fH1KplHKbmVEEFLoaci6J1dZL5Ed9SvJ8boBR72E_eojXV6icRZdDwPC7fkvDxEHFxz2Sn4lBe4-D96s_I/s1600/hladna-kasa-sa-malinama-od-zobenih-pahuljica-6771.jpg",
+      "autorId": 1,
+      "id": "8"
     },
     {
-      "id": "9",
       "naziv": "Jaja na oko",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "4jaja",
+        "1 kašičica ulja ili maslaca",
+        "prstohvat soli"
       ],
       "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 54,
-      "kalorije": 514,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
+      "vremePripreme": 12,
+      "kalorije": 210,
+      "slika": "https://www.vijesti.me/data/images/2019/03/28/00/4349587_20190328160352_aa9ad1b411cb0a8a205d65b5965e7a513a28f155148107e8b716d376c68ead35_ls.jpg",
+      "autorId": 1,
+      "id": "9"
     },
     {
-      "id": "10",
       "naziv": "Francuski tost",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "hljeb",
+        "1 jaje",
+        "50 ml mlijeka",
+        "1 kašičica šećera",
+        "malo ulja ili maslaca."
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
+      "upute": "Umutiti jaje, mlijeko i šećer. Kriške hljeba umočiti u smjesu i pržiti na zagrijanoj tavi s obje strane dok ne porumene. 🍞🥚✨",
       "vremePripreme": 30,
       "kalorije": 408,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
+      "slika": "https://cdn.loveandlemons.com/wp-content/uploads/2024/08/french-toast-580x756.jpg",
+      "autorId": 1,
+      "id": "10"
     },
     {
-      "id": "11",
       "naziv": "Granola sa jogurtom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "granola",
+        "jogurt",
+        "med",
+        "svježe voće."
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
+      "upute": "U zdjelu sipati jogurt, dodati granolu i voće, po želji preliti medom i poslužiti. 🥣🍓✨",
       "vremePripreme": 53,
       "kalorije": 199,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
+      "slika": "https://www.fitness.com.hr/images/uploads/1161127/4688b91b-d15e-44de-9a52-fbc79616eeb6.jpg",
+      "autorId": 1,
+      "id": "11"
     },
     {
-      "id": "12",
       "naziv": "Omlet sa sirom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "2 jaja",
+        "sir",
+        "malo ulja ili maslaca",
+        "prstohvat soli."
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
+      "upute": "Umutiti jaja i posoliti. Smjesu izliti na zagrijanu tavu, dodati sir i peći nekoliko minuta dok omlet ne bude gotov. 🍳🧀✨",
       "vremePripreme": 43,
       "kalorije": 249,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
+      "slika": "https://kuharica.avaz.ba/wp-content/uploads/2020/09/omlet-sir11.jpg",
+      "autorId": 1,
+      "id": "12"
     },
     {
-      "id": "13",
       "naziv": "Tost sa avokadom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1 kriška tosta",
+        "1/2 avokada",
+        "prstohvat soli",
+        "nekoliko kapi limunovog soka."
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
+      "upute": "Tostirati hljeb. Avokado izgnječiti viljuškom, dodati so i limunov sok, zatim namazati na tost i poslužiti. 🥑🍞✨",
       "vremePripreme": 57,
       "kalorije": 236,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
+      "slika": "https://www.eatingbirdfood.com/wp-content/uploads/2023/12/avocado-toast-hero-cropped.jpg",
+      "autorId": 1,
+      "id": "13"
     },
     {
-      "id": "14",
       "naziv": "Muesli sa mlijekom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "80g mueslia",
+        "200ml mlijeka"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 26,
-      "kalorije": 254,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
+      "upute": "Sipati muesli u zdjelu, preliti mlijekom i poslužiti.",
+      "vremePripreme": 3,
+      "kalorije": 320,
+      "slika": "https://kitchenconfidante.com/wp-content/uploads/2014/01/Blueberry-Muesli-kitchenconfidante.com-FEATURED-IMAGE-1170x580.jpg",
+      "autorId": 1,
+      "id": "14"
     },
     {
-      "id": "15",
       "naziv": "Kajgana sa povrćem",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "2 jaja",
+        "1/2 paprike",
+        "1 paradajz",
+        "1 kašičica ulja",
+        "prstohvat soli"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 62,
-      "kalorije": 391,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
+      "upute": "Nasjeckati papriku i paradajz, kratko propržiti na ulju. Dodati umućena jaja i peći uz miješanje dok ne bude gotovo.",
+      "vremePripreme": 10,
+      "kalorije": 210,
+      "slika": "https://moj-restoran.info/wp-content/uploads/2012/04/kajgana-s-povrcem.jpg",
+      "autorId": 1,
+      "id": "15"
     },
     {
-      "id": "16",
       "naziv": "Crepes sa Nutellom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "150g brašna",
+        "200ml mlijeka",
+        "1 jaje",
+        "1 kašika maslaca",
+        "3 kašike Nutelle"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 30,
-      "kalorije": 274,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
+      "upute": "Umutiti brašno, mlijeko i jaje u glatku smjesu. Ispeći tanke palačinke na zagrijanoj tavi. Premazati Nutellom i saviti.",
+      "vremePripreme": 20,
+      "kalorije": 380,
+      "slika": "https://www.krusteaz.com/wp-content/uploads/2022/04/Screen-Shot-2022-04-08-at-3.44.53-PM-763x1024.png",
+      "autorId": 1,
+      "id": "16"
     },
     {
-      "id": "17",
       "naziv": "Bagel sa sirom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1 bagel",
+        "50g krem sira"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 57,
-      "kalorije": 506,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
+      "upute": "Bagel prerezati na pola, premazati krem sirom i poslužiti.",
+      "vremePripreme": 3,
+      "kalorije": 280,
+      "slika": "https://theveggieyaya.com/wp-content/uploads/2024/05/bagel-grilled-cheese-11.jpg",
+      "autorId": 1,
+      "id": "17"
     },
     {
-      "id": "18",
-      "naziv": "Banana pancakes",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 35,
-      "kalorije": 526,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "19",
       "naziv": "Waffles sa sirupom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "150g brašna",
+        "200ml mlijeka",
+        "1 jaje",
+        "1 kašičica praška za pecivo",
+        "javorov sirup"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 31,
-      "kalorije": 168,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
+      "upute": "Pomiješati suhe i mokre sastojke. Peći u aparatu za vafle prema uputama. Preliti javorovim sirupom.",
+      "vremePripreme": 15,
+      "kalorije": 350,
+      "slika": "https://www.thespicehouse.com/cdn/shop/articles/Maple_Waffles_89a00241-086e-4724-918a-521f852e00ad_720x.jpg?v=1586286648",
+      "autorId": 1,
+      "id": "19"
     },
     {
-      "id": "20",
       "naziv": "Proteinski smoothie",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "200ml mlijeka",
+        "1 banana",
+        "30g proteinskog praha",
+        "kockice leda"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 20,
-      "kalorije": 313,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
+      "upute": "Sve sastojke staviti u blender i izmiksati do glatke smjese. Poslužiti odmah.",
+      "vremePripreme": 5,
+      "kalorije": 280,
+      "slika": "https://images.immediate.co.uk/production/volatile/sites/30/2024/06/Berry-Smoothie-14f662b.jpg?quality=90&webp=true&resize=440,400",
+      "autorId": 1,
+      "id": "20"
     },
     {
-      "id": "21",
       "naziv": "Chia pudding",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "4 kašike chia sjemenki",
+        "250ml mlijeka",
+        "1 kašika meda"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 37,
-      "kalorije": 416,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
+      "upute": "Pomiješati chia sjemenke, mlijeko i med. Pokriti i ostaviti u frižideru najmanje 4 sata ili preko noći.",
+      "vremePripreme": 5,
+      "kalorije": 200,
+      "slika": "https://plantbasedrdblog.com/wp-content/uploads/2024/02/banana-nut-chia-pudding_feat.jpg",
+      "autorId": 1,
+      "id": "21"
     },
     {
-      "id": "22",
       "naziv": "Skuta sa voćem",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "200g skute",
+        "100g svježeg voća",
+        "1 kašičica meda"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 29,
-      "kalorije": 434,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
+      "upute": "Skutu staviti u zdjelu, dodati nasjeckano svježe voće. Po želji preliti medom i odmah poslužiti.",
+      "vremePripreme": 5,
+      "kalorije": 180,
+      "slika": "https://ezrecept.wordpress.com/wp-content/uploads/2014/07/kefir_orasi_bademi_lan_kupine2.jpg",
+      "autorId": 1,
+      "id": "22"
     },
     {
-      "id": "23",
       "naziv": "Kukuruzna kaša",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "80g kukuruzne krupice",
+        "400ml vode",
+        "prstohvat soli"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 64,
-      "kalorije": 279,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
+      "upute": "Prokuhati vodu sa solju. Postepeno dodavati krupicu uz stalno miješanje. Kuhati 10-15 minuta dok se ne zgusne.",
+      "vremePripreme": 15,
+      "kalorije": 250,
+      "slika": "https://njam.ba/wp-content/uploads/2025/01/IMG_5531.jpg",
+      "autorId": 1,
+      "id": "23"
     },
     {
-      "id": "24",
-      "naziv": "Burek sa sirom",
+      "naziv": "Sirnica",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "6 jufki",
+        "300g sira",
+        "2 kašike ulja"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 15,
-      "kalorije": 430,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
+      "upute": "Namazati jufke sirom, saviti u rolice ili trouglove. Peći u rerni na 200°C oko 25 minuta do zlatne boje.",
+      "vremePripreme": 35,
+      "kalorije": 420,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1600/6d9886ec-63bd-11eb-996b-0242ac12001f.webp",
+      "autorId": 1,
+      "id": "24"
     },
     {
-      "id": "25",
       "naziv": "Pita sa jabukama",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "6 jufki",
+        "4 jabuke",
+        "3 kašike šećera",
+        "1 kašičica cimeta"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 17,
-      "kalorije": 208,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
+      "upute": "Jabuke narendati i pomiješati sa šećerom i cimetom. Napuniti jufke smjesom, saviti i peći na 180°C 30 minuta.",
+      "vremePripreme": 40,
+      "kalorije": 310,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1600/af8ecbd2-63cd-11eb-912d-0242ac12005a.webp",
+      "autorId": 1,
+      "id": "25"
     },
     {
-      "id": "26",
       "naziv": "Kifle sa džemom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "500g brašna",
+        "7g kvasca",
+        "250ml mlijeka",
+        "100g džema"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 49,
-      "kalorije": 511,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
+      "upute": "Zamijesiti tijesto od brašna, kvasca i mlijeka. Ostaviti da naraste. Oblikovati kifle s džemom i peći na 190°C 20 minuta.",
+      "vremePripreme": 60,
+      "kalorije": 280,
+      "slika": "https://recepti.zena.blic.rs/resources/images/0a/0a27b0193970757955db1cae7efb9c3a/resize/20161018165327_1485961101_670x0.jpg",
+      "autorId": 1,
+      "id": "26"
     },
     {
-      "id": "27",
       "naziv": "Pecivo sa maslacem",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1 pecivo",
+        "20g maslaca"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 17,
-      "kalorije": 245,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
+      "upute": "Pecivo prerezati na pola, svaku polovicu premazati maslacem i poslužiti.",
+      "vremePripreme": 2,
+      "kalorije": 220,
+      "slika": "https://mymilicake.com/wp-content/uploads/2021/03/tr5.jpg",
+      "autorId": 1,
+      "id": "27"
     },
     {
-      "id": "28",
       "naziv": "Domaći jogurt",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1L mlijeka",
+        "2 kašike jogurt kulture"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 40,
-      "kalorije": 390,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
+      "upute": "Mlijeko zagrijati na 43°C. Dodati jogurt kulturu i promiješati. Ostaviti pokriveno na toplom 6-8 sati da fermentira.",
+      "vremePripreme": 10,
+      "kalorije": 150,
+      "slika": "https://gospodarski.hr/wp-content/uploads/1-naslovna-jogurt.jpg",
+      "autorId": 1,
+      "id": "28"
     },
     {
-      "id": "29",
-      "naziv": "Proja sa sirom",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 25,
-      "kalorije": 164,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "30",
-      "naziv": "Palenta sa mlijekom",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 40,
-      "kalorije": 276,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "31",
       "naziv": "Zobena kaša s bananom",
       "kategorija": "doručak",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "80g zobenih pahuljica",
+        "200ml mlijeka",
+        "1 banana"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 46,
-      "kalorije": 340,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
+      "upute": "Skuhati zobene pahuljice u mlijeku 5 minuta uz miješanje. Dodati narezanu bananu i odmah poslužiti.",
+      "vremePripreme": 8,
+      "kalorije": 300,
+      "slika": "https://www.fitness.com.hr/images/articles/kasa12.webp",
+      "autorId": 1,
+      "id": "31"
     },
     {
-      "id": "32",
       "naziv": "Goveđa čorba",
       "kategorija": "juha",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "500g goveđeg mesa",
+        "2 mrkve",
+        "1 luk",
+        "2 krompira",
+        "sol",
+        "biber",
+        "lovorov list"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 14,
-      "kalorije": 377,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
+      "upute": "Meso oprati i staviti u hladnu vodu. Dodati povrće i kuhati 90 minuta. Začiniti solju, biberom i lovorovim listom.",
+      "vremePripreme": 100,
+      "kalorije": 280,
+      "slika": "https://www.ljepotaizdravlje.ba/wp-content/uploads/2020/03/gulas-corba-getty.jpg",
+      "autorId": 1,
+      "id": "32"
     },
     {
-      "id": "33",
-      "naziv": "Minestrone",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 25,
-      "kalorije": 439,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "34",
-      "naziv": "Cream of tomato",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 58,
-      "kalorije": 437,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "35",
-      "naziv": "Lećina čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 32,
-      "kalorije": 396,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "36",
-      "naziv": "Grahova čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 49,
-      "kalorije": 349,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "37",
-      "naziv": "Pasulj čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 26,
-      "kalorije": 395,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "38",
       "naziv": "Riblja čorba",
       "kategorija": "juha",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "500g ribljeg filea",
+        "1 luk",
+        "2 krompira",
+        "1 mrkva",
+        "sol",
+        "biber",
+        "peršun",
+        "maslinovo ulje"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 45,
-      "kalorije": 457,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
+      "upute": "Luk propržiti na ulju, dodati krompir i mrkvu. Dodati vodu i kuhati 15 minuta. Dodati ribu i kuhati još 10 minuta.",
+      "vremePripreme": 35,
+      "kalorije": 200,
+      "slika": "https://aleva.rs/wp-content/uploads/2025/01/riblja-corba-1024x683.jpg",
+      "autorId": 1,
+      "id": "38"
     },
     {
-      "id": "39",
-      "naziv": "Kisela čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 31,
-      "kalorije": 242,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "40",
-      "naziv": "Zelena čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 27,
-      "kalorije": 301,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "41",
       "naziv": "Čorba od povrća",
       "kategorija": "juha",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1 mrkva",
+        "1 tikvica",
+        "1 paprika",
+        "1 krompir",
+        "1 luk",
+        "maslinovo ulje",
+        "sol",
+        "biber",
+        "peršun"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 14,
-      "kalorije": 513,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
+      "upute": "Sve povrće nasjeckati i propržiti na ulju. Dodati vodu i kuhati 20 minuta. Začiniti i posuti peršunom.",
+      "vremePripreme": 30,
+      "kalorije": 140,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1200/86644a1a-6392-11eb-92c9-0242ac12002c.webp",
+      "autorId": 1,
+      "id": "41"
     },
     {
-      "id": "42",
-      "naziv": "Krompir čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 58,
-      "kalorije": 375,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "43",
-      "naziv": "Šargarepa čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 44,
-      "kalorije": 455,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "44",
-      "naziv": "Tikvica čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 21,
-      "kalorije": 474,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "45",
-      "naziv": "Brokula čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 31,
-      "kalorije": 294,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "46",
       "naziv": "Grašak čorba",
       "kategorija": "juha",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "400g graška",
+        "1 luk",
+        "1 krompir",
+        "500ml povrtne juhe",
+        "menta",
+        "sol",
+        "biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 63,
-      "kalorije": 478,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
+      "upute": "Luk propržiti, dodati grašak i krompir. Zaliti juhom i kuhati 15 minuta. Izblendati sa mentom.",
+      "vremePripreme": 20,
+      "kalorije": 160,
+      "slika": "https://piovariations.cdn.podravka.net/public/wide/1200/05040822-6403-11eb-b14f-0242ac12005b.webp",
+      "autorId": 1,
+      "id": "46"
     },
     {
-      "id": "47",
-      "naziv": "Spanać čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 13,
-      "kalorije": 255,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "48",
-      "naziv": "Bundeva čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 34,
-      "kalorije": 406,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "49",
-      "naziv": "Luk čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 12,
-      "kalorije": 254,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "50",
-      "naziv": "Čorba od sočiva",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 39,
-      "kalorije": 232,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "51",
-      "naziv": "Gazpacho",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 21,
-      "kalorije": 150,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "52",
-      "naziv": "Tom yum",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 42,
-      "kalorije": 388,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "53",
-      "naziv": "Miso čorba",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 54,
-      "kalorije": 192,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "54",
       "naziv": "Čorba od pečurki",
       "kategorija": "juha",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "400g šampinjona",
+        "1 luk",
+        "2 čena češnjaka",
+        "200ml vrhnja",
+        "sol",
+        "biber",
+        "timijan",
+        "maslinovo ulje"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 22,
-      "kalorije": 439,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
+      "upute": "Luk i češnjak propržiti. Dodati pečurke i timijan. Zaliti juhom i kuhati 15 minuta. Dodati vrhnje i izblendati.",
+      "vremePripreme": 25,
+      "kalorije": 180,
+      "slika": "https://moje-grne.com/wp-content/uploads/2009/05/corba-od-sampinjona-na-lovacki-nacin1.jpg",
+      "autorId": 1,
+      "id": "54"
     },
     {
-      "id": "55",
-      "naziv": "Čorba od celera",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 48,
-      "kalorije": 269,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "56",
-      "naziv": "Čorba od kelja",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 22,
-      "kalorije": 329,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "57",
       "naziv": "Pečena piletina",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1 cijela piletina",
+        "4 čena češnjaka",
+        "maslinovo ulje",
+        "ruzmarin",
+        "timijan",
+        "sol",
+        "biber",
+        "1 limun"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 59,
-      "kalorije": 534,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
+      "upute": "Piletinu natrljati mješavinom ulja, češnjaka i začina. Peći u rerni na 200°C 60-70 minuta. Odmoriti 10 minuta prije rezanja.",
+      "vremePripreme": 80,
+      "kalorije": 420,
+      "slika": "https://sire-media-24k.techops.disn.io/24k_hr/recipe-image/297578.1200x675.webp",
+      "autorId": 1,
+      "id": "57"
     },
     {
-      "id": "58",
       "naziv": "Goveđi gulaš",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "600g goveđeg mesa",
+        "2 luka",
+        "2 mrkve",
+        "2 kašike paradajz pirea",
+        "crveno vino",
+        "sol",
+        "biber",
+        "paprika"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 49,
-      "kalorije": 377,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
+      "upute": "Meso narezati i propržiti. Dodati luk i mrkvu. Dodati vino i paradajz pire. Dinstati na laganoj vatri 90 minuta.",
+      "vremePripreme": 110,
+      "kalorije": 380,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1200/fcdf1fe2-63da-11eb-812a-0242ac12003e.webp",
+      "autorId": 1,
+      "id": "58"
     },
     {
-      "id": "59",
       "naziv": "Punjene paprike",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "6 paprika",
+        "300g mljevenog mesa",
+        "150g riže",
+        "1 luk",
+        "paradajz sos",
+        "sol",
+        "biber",
+        "paprika"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 23,
-      "kalorije": 221,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
+      "upute": "Rižu sa mesom i lukom napuniti paprike. Staviti u šerpu, preliti paradajz sosom i kuhati 45 minuta.",
+      "vremePripreme": 60,
+      "kalorije": 320,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1200/cb65b8c6-6403-11eb-9f14-0242ac12001d.webp",
+      "autorId": 1,
+      "id": "59"
     },
     {
-      "id": "60",
       "naziv": "Musaka",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "500g mljevenog mesa",
+        "3 krompira",
+        "1 luk",
+        "2 jaja",
+        "200ml mlijeka",
+        "sir",
+        "sol",
+        "biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 37,
-      "kalorije": 153,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
+      "upute": "Naizmjenično redati meso i krompir u tepsiju. Preliti mješavinom jaja i mlijeka. Posuti sirom i peći 45 minuta.",
+      "vremePripreme": 60,
+      "kalorije": 380,
+      "slika": "https://i0.wp.com/thebalkanhostess.com/wp-content/uploads/2020/06/Musaka_feature-1.jpg?resize=750%2C500&ssl=1",
+      "autorId": 1,
+      "id": "60"
     },
     {
-      "id": "61",
       "naziv": "Bosanski lonac",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "500g jagnjetine",
+        "3 krompira",
+        "2 mrkve",
+        "1 luk",
+        "sol",
+        "biber",
+        "lovorov list",
+        "voda"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 63,
-      "kalorije": 185,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
+      "upute": "Meso i povrće slagati u lonac naizmjenično. Začiniti, preliti vodom i kuhati poklopljeno 2 sata.",
+      "vremePripreme": 130,
+      "kalorije": 350,
+      "slika": "https://www.volim-meso.hr/wordpress/wp-content/uploads/2015/09/bosanski-lonac-01-1024x576.jpg",
+      "autorId": 1,
+      "id": "61"
     },
     {
-      "id": "62",
       "naziv": "Ćevapi",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "500g mljevenog mesa",
+        "1 luk",
+        "2 čena češnjaka",
+        "sol",
+        "biber",
+        "paprika",
+        "mast"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 43,
-      "kalorije": 249,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
+      "upute": "Meso pomiješati sa lukom, češnjakom i začinima. Oblikovati ćevape i peći na roštilju 10-12 minuta.",
+      "vremePripreme": 25,
+      "kalorije": 320,
+      "slika": "https://myvietkitchen.com/wp-content/uploads/2026/03/Cevapi-1024x559.webp",
+      "autorId": 1,
+      "id": "62"
     },
     {
-      "id": "63",
       "naziv": "Pljeskavica",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "600g mljevenog mesa",
+        "1 luk",
+        "2 čena češnjaka",
+        "sol",
+        "biber",
+        "paprika"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 58,
-      "kalorije": 238,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
+      "upute": "Meso pomiješati sa lukom i začinima. Oblikovati pljeskavice i peći na roštilju 5-6 minuta sa svake strane.",
+      "vremePripreme": 20,
+      "kalorije": 350,
+      "slika": "https://myvietkitchen.com/wp-content/uploads/2026/03/Pljeskavica-1024x559.webp",
+      "autorId": 1,
+      "id": "63"
     },
     {
-      "id": "64",
-      "naziv": "Burek sa mesom",
+      "naziv": "Burek",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "8 jufki",
+        "400g mljevenog mesa",
+        "1 luk",
+        "sol",
+        "biber",
+        "paprika",
+        "ulje"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 51,
-      "kalorije": 355,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
+      "upute": "Meso propržiti sa lukom i začinima. Napuniti jufke, saviti i peći u rerni na 200°C 30 minuta.",
+      "vremePripreme": 45,
+      "kalorije": 440,
+      "slika": "https://www.allrecipes.com/thmb/4i7mPettOMwzSwc1uK98mYtilds=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/6804488-4a44c03ad83141d9baa0392f10588128.jpg",
+      "autorId": 1,
+      "id": "64"
     },
     {
-      "id": "65",
-      "naziv": "Pečena svinjetina",
-      "kategorija": "glavno jelo",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 62,
-      "kalorije": 489,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "66",
       "naziv": "Janjetina ispod sača",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1kg jagnjetine",
+        "4 krompira",
+        "2 luka",
+        "sol",
+        "biber",
+        "maslinovo ulje",
+        "ruzmarin"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 40,
-      "kalorije": 282,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
+      "upute": "Jagnjetinu i krompir začiniti i staviti pod sač. Peći pokriveno 2-3 sata na žaru.",
+      "vremePripreme": 180,
+      "kalorije": 420,
+      "slika": "https://cuhacha.com/storage/2023/01/janj.jpg",
+      "autorId": 1,
+      "id": "66"
     },
     {
-      "id": "67",
       "naziv": "Riba na žaru",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "2 riblji fileta",
+        "maslinovo ulje",
+        "limun",
+        "sol",
+        "biber",
+        "timijan",
+        "češnjak"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 47,
-      "kalorije": 321,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
+      "upute": "Ribu začiniti solju, biberom i timijanom. Peći na roštilju 4-5 minuta sa svake strane. Poslužiti sa limunom.",
+      "vremePripreme": 15,
+      "kalorije": 280,
+      "slika": "https://static.kraljzara.hr/cache/0X300/blog/94/prva.jpg",
+      "autorId": 1,
+      "id": "67"
     },
     {
-      "id": "68",
       "naziv": "Losos u rerni",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "400g lososa",
+        "2 kašike maslinovog ulja",
+        "1 limun",
+        "2 čena češnjaka",
+        "sol",
+        "biber",
+        "kopar"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 33,
-      "kalorije": 215,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
+      "upute": "Lososa začiniti i staviti na papir za pečenje. Peći u rerni na 200°C 20 minuta. Poslužiti sa koprom.",
+      "vremePripreme": 25,
+      "kalorije": 340,
+      "slika": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy6aNihrVDEWT_aEAtzO5-Tqze1o0IvbzyRGFgiR6GNlLo6PN-B7LX0wIxRMc7UsMuOqnIaMp4s1RwUkQSKmNirqPzWW3TLG86n32pwJs6Z92yx3b674IDJIeKbpKGdhUq94FiUxxzPBU/s1600/pecena-riba-losos-7066.jpg",
+      "autorId": 1,
+      "id": "68"
     },
     {
-      "id": "69",
       "naziv": "Tuna pasta",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "300g paste",
+        "1 konzerva tune",
+        "200ml paradajz sosa",
+        "1 luk",
+        "2 čena češnjaka",
+        "sol",
+        "biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 14,
-      "kalorije": 458,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
+      "upute": "Skuhati pastu. Luk i češnjak propržiti, dodati paradajz sos i tunu. Pomiješati sa pastom.",
+      "vremePripreme": 20,
+      "kalorije": 390,
+      "slika": "https://www.recipetineats.com/tachyon/2023/04/Canned-tuna-pasta_0-copy.jpg?resize=900%2C1125&zoom=0.72",
+      "autorId": 1,
+      "id": "69"
     },
     {
-      "id": "70",
       "naziv": "Carbonara",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "300g špageta",
+        "150g pancete",
+        "3 jaja",
+        "100g parmezana",
+        "2 čena češnjaka",
+        "crni biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 23,
-      "kalorije": 158,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
+      "upute": "Skuhati špagete. Pancetu propržiti sa češnjakom. Jaja pomiješati sa parmezanom. Sve sjediniti brzo miješajući.",
+      "vremePripreme": 20,
+      "kalorije": 520,
+      "slika": "https://www.jocooks.com/wp-content/uploads/2019/06/creamy-carbonara-1-2-1229x1536.jpg",
+      "autorId": 1,
+      "id": "70"
     },
     {
-      "id": "71",
       "naziv": "Bolognese",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "300g mlevenog mesa",
+        "400g paradajza",
+        "1 luk",
+        "2 mrkve",
+        "150ml crnog vina",
+        "300g paste",
+        "parmezan"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 25,
-      "kalorije": 493,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
+      "upute": "Meso propržiti sa lukom i mrkvom. Dodati vino i paradajz. Dinstati 45 minuta. Poslužiti sa pastom.",
+      "vremePripreme": 60,
+      "kalorije": 480,
+      "slika": "https://assets.bonappetit.com/photos/5c2f8fe22efb8f2d33e396ca/1:1/w_960,c_limit/bolognese.jpg",
+      "autorId": 1,
+      "id": "71"
     },
     {
-      "id": "72",
       "naziv": "Risotto",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "300g arborio riže",
+        "1 luk",
+        "150ml bijelog vina",
+        "800ml povrtne juhe",
+        "100g parmezana",
+        "maslac"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 54,
-      "kalorije": 370,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
+      "upute": "Luk propržiti, dodati rižu i vino. Postepeno dodavati juhu uz miješanje 20 minuta. Dodati parmezan i maslac.",
+      "vremePripreme": 30,
+      "kalorije": 420,
+      "slika": "https://www.daisybrand.com/wp-content/uploads/2019/12/WILD-MUSHROOM-RISOTTO-770x628.jpg",
+      "autorId": 1,
+      "id": "72"
     },
     {
-      "id": "73",
       "naziv": "Lazanje",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "9 listova lazanje",
+        "400g mljevenog mesa",
+        "400g paradajz sosa",
+        "bešamel sos",
+        "200g parmezana"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 36,
-      "kalorije": 537,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
+      "upute": "Naizmjenično redati meso, bešamel i listove lazanje. Završiti sirom. Peći na 180°C 40 minuta.",
+      "vremePripreme": 60,
+      "kalorije": 480,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1200/7cdceffa-63cf-11eb-a23b-0242ac120043.webp",
+      "autorId": 1,
+      "id": "73"
     },
     {
-      "id": "74",
       "naziv": "Pica Margherita",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "pizza tijesto",
+        "200g paradajz sosa",
+        "200g mocarele",
+        "svježi bosiljak",
+        "maslinovo ulje",
+        "sol"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 54,
-      "kalorije": 182,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
+      "upute": "Razvući tijesto, premazati paradajz sosom. Staviti mocarelu i peći na 250°C 10-12 minuta. Dodati bosiljak.",
+      "vremePripreme": 20,
+      "kalorije": 360,
+      "slika": "https://www.vindulge.com/wp-content/uploads/2022/05/Margherita-Pizza-1094x1536.jpg",
+      "autorId": 1,
+      "id": "74"
     },
     {
-      "id": "75",
       "naziv": "Vegetarijanski burger",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1 veggie burger",
+        "zelena salata",
+        "1 paradajz",
+        "1/4 luka",
+        "ketchup",
+        "majonez",
+        "lepinja"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 48,
-      "kalorije": 244,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
+      "upute": "Veggie burger ispeći prema uputama. Složiti lepinjicu sa salatom, paradajzom, lukom i sosom.",
+      "vremePripreme": 15,
+      "kalorije": 380,
+      "slika": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/halloumi-burger-4fdad97.jpg?quality=90&webp=true&resize=500,454",
+      "autorId": 1,
+      "id": "75"
     },
     {
-      "id": "76",
-      "naziv": "Falafel",
-      "kategorija": "glavno jelo",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 32,
-      "kalorije": 533,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "77",
       "naziv": "Šiš ćevap",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "500g jagnjetine",
+        "2 paprike",
+        "1 luk",
+        "maslinovo ulje",
+        "kumin",
+        "sol",
+        "biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 18,
-      "kalorije": 359,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
+      "upute": "Meso narezati na kocke i marinirati. Nanizati na ražnjiće sa povrćem. Peći na roštilju 12-15 minuta.",
+      "vremePripreme": 30,
+      "kalorije": 340,
+      "slika": "https://www.volim-meso.hr/wordpress/wp-content/uploads/2014/08/sis-cevap-01-1024x576.jpg",
+      "autorId": 1,
+      "id": "77"
     },
     {
-      "id": "78",
       "naziv": "Meso na žaru",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "600g miješanog mesa",
+        "sol",
+        "biber",
+        "češnjak",
+        "maslinovo ulje",
+        "limun"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 15,
-      "kalorije": 385,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
+      "upute": "Meso marinirati sat vremena. Peći na roštilju 4-6 minuta sa svake strane ovisno o debljini.",
+      "vremePripreme": 70,
+      "kalorije": 380,
+      "slika": "https://static.kraljzara.hr/cache/0X300/blog/86/3.jpg",
+      "autorId": 1,
+      "id": "78"
     },
     {
-      "id": "79",
       "naziv": "Punjene tikvice",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "4 tikvice",
+        "200g mljevenog mesa",
+        "100g riže",
+        "1 luk",
+        "paradajz sos",
+        "sir",
+        "sol",
+        "biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 63,
-      "kalorije": 347,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
+      "upute": "Tikvice izdupsti. Meso sa rižom i lukom propržiti i napuniti tikvice. Preliti sosom i peći 35 minuta.",
+      "vremePripreme": 50,
+      "kalorije": 280,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1200/d68e560e-63fe-11eb-94d0-0242ac120069.webp",
+      "autorId": 1,
+      "id": "79"
     },
     {
-      "id": "80",
       "naziv": "Sarma",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "500g mljevenog mesa",
+        "1 glavica kiselog kupusa",
+        "150g riže",
+        "1 luk",
+        "sol",
+        "biber",
+        "paprika"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 37,
-      "kalorije": 323,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
+      "upute": "Meso pomiješati sa rižom i lukom. Napuniti listove kupusa i zarolati. Kuhati u paradajz sosu 90 minuta.",
+      "vremePripreme": 110,
+      "kalorije": 350,
+      "slika": "https://recepti-api.index.hr/img/preview/large/recipe/f638e2be-b050-416c-bf1a-7acf39cf1762/recepti2.jpg",
+      "autorId": 1,
+      "id": "80"
     },
     {
-      "id": "81",
-      "naziv": "Japrak",
-      "kategorija": "glavno jelo",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 17,
-      "kalorije": 326,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "82",
       "naziv": "Cezar salata",
       "kategorija": "salata",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1 romaine salata",
+        "100g pilećih prsa",
+        "50g parmezana",
+        "krutoni",
+        "caesar dresing",
+        "sol",
+        "biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 39,
-      "kalorije": 188,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
+      "upute": "Piletinu ispeći i narezati. Salatu pomiješati sa dressingom. Dodati piletinu, parmezan i krutone.",
+      "vremePripreme": 20,
+      "kalorije": 320,
+      "slika": "https://recepti-api.index.hr/img/preview/large/recipe/a60d55a6-77eb-4140-9bf8-ac9b62437e94/IMG_3564.jpg",
+      "autorId": 1,
+      "id": "82"
     },
     {
-      "id": "83",
-      "naziv": "Nicoise salata",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 58,
-      "kalorije": 511,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "84",
-      "naziv": "Caprese salata",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 33,
-      "kalorije": 158,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "85",
-      "naziv": "Tabule",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 11,
-      "kalorije": 495,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "86",
-      "naziv": "Coleslaw",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 54,
-      "kalorije": 363,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "87",
       "naziv": "Ruska salata",
       "kategorija": "salata",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "3 krompira",
+        "2 mrkve",
+        "200g graška",
+        "3 jaja",
+        "200g majoneza",
+        "sol",
+        "biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 25,
-      "kalorije": 186,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
+      "upute": "Skuhati krompir, mrkvu, grašak i jaja. Ohladiti i narezati. Pomiješati sa majonezom i začiniti.",
+      "vremePripreme": 40,
+      "kalorije": 320,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1200/814b5008-6425-11eb-8490-0242ac120046.webp",
+      "autorId": 1,
+      "id": "87"
     },
     {
-      "id": "88",
       "naziv": "Šopska salata",
       "kategorija": "salata",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "3 paradajza",
+        "1 krastavac",
+        "1 zelena paprika",
+        "100g bijelog sira",
+        "maslinovo ulje",
+        "sol"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 41,
-      "kalorije": 272,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
+      "upute": "Povrće nasjeckati na kockice. Dodati narendani sir. Preliti maslinovim uljem i začiniti solju.",
+      "vremePripreme": 10,
+      "kalorije": 160,
+      "slika": "https://image.dnevnik.hr/media/images/920x695/Dec2018/61603578-sopska-salata-salata-tradicionalna-kuhinja.jpg",
+      "autorId": 1,
+      "id": "88"
     },
     {
-      "id": "89",
       "naziv": "Sezonska salata",
       "kategorija": "salata",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "zelena salata",
+        "2 paradajza",
+        "1 krastavac",
+        "1 mrkva",
+        "maslinovo ulje",
+        "limunov sok",
+        "sol"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 58,
-      "kalorije": 157,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
+      "upute": "Povrće oprati i nasjeckati. Salatu potrgati rukom. Sve pomiješati i začiniti uljem i limunom.",
+      "vremePripreme": 10,
+      "kalorije": 100,
+      "slika": "https://www.womeninadria.com/wp-content/uploads/2020/10/sezonska-salata-1068x580.jpg",
+      "autorId": 1,
+      "id": "89"
     },
     {
-      "id": "90",
-      "naziv": "Salata od cvekle",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 25,
-      "kalorije": 295,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "91",
-      "naziv": "Salata od kukuruza",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 51,
-      "kalorije": 332,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "92",
-      "naziv": "Zelena salata",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 49,
-      "kalorije": 317,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "93",
       "naziv": "Salata od tune",
       "kategorija": "salata",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "2 konzerve tune",
+        "1 krastavac",
+        "2 paradajza",
+        "1/2 luka",
+        "masline",
+        "maslinovo ulje",
+        "limun"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 57,
-      "kalorije": 256,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
+      "upute": "Tunu ocijediti i pomiješati sa nasjecknim povrćem. Dodati masline i preliti uljem sa limunom.",
+      "vremePripreme": 10,
+      "kalorije": 240,
+      "slika": "https://putnikofer.hr/wp-content/uploads/2024/05/salata-od-tune-720x450.webp",
+      "autorId": 1,
+      "id": "93"
     },
     {
-      "id": "94",
       "naziv": "Salata od piletine",
       "kategorija": "salata",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "300g pilećih prsa",
+        "zelena salata",
+        "1 paradajz",
+        "1/2 luka",
+        "maslinovo ulje",
+        "limun",
+        "sol"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 12,
-      "kalorije": 349,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
+      "upute": "Piletinu ispeći i narezati na trakice. Pomiješati sa salatom i povrćem. Preliti uljem i limunom.",
+      "vremePripreme": 25,
+      "kalorije": 280,
+      "slika": "https://krenizdravo.dnevnik.hr/wp-content/uploads/2022/05/Salata-od-piletine-2.jpg",
+      "autorId": 1,
+      "id": "94"
     },
     {
-      "id": "95",
-      "naziv": "Salata od pasulja",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 28,
-      "kalorije": 204,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "96",
-      "naziv": "Salata od sočiva",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 51,
-      "kalorije": 241,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "97",
-      "naziv": "Waldorf salata",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 50,
-      "kalorije": 340,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "98",
-      "naziv": "Salata od krastavaca",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 64,
-      "kalorije": 255,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "99",
-      "naziv": "Salata od paradajza",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 18,
-      "kalorije": 386,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "100",
-      "naziv": "Salata od rotkvica",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 48,
-      "kalorije": 464,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "101",
       "naziv": "Mješana salata",
       "kategorija": "salata",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "zelena salata",
+        "rukola",
+        "1 paradajz",
+        "1 mrkva",
+        "maslinovo ulje",
+        "limun",
+        "sol",
+        "sjemenke"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 30,
-      "kalorije": 243,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
+      "upute": "Oprati i nasjeckati povrće. Pomiješati sa rukolom. Preliti uljem i limunom. Posuti sjemenkama.",
+      "vremePripreme": 10,
+      "kalorije": 100,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1200/f67f51be-610d-11eb-a0d4-0242ac120056.webp",
+      "autorId": 1,
+      "id": "101"
     },
     {
-      "id": "102",
-      "naziv": "Salata od avokada",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 12,
-      "kalorije": 546,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "103",
-      "naziv": "Insalata mista",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 15,
-      "kalorije": 309,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "104",
-      "naziv": "Fattoush",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 30,
-      "kalorije": 153,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "105",
-      "naziv": "Panzanella",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 41,
-      "kalorije": 541,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "106",
-      "naziv": "Salata od špinata",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 49,
-      "kalorije": 165,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "107",
-      "naziv": "Pileći šnitzel",
-      "kategorija": "glavno jelo",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 51,
-      "kalorije": 483,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "108",
-      "naziv": "Svinjski kotlet",
-      "kategorija": "glavno jelo",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 15,
-      "kalorije": 254,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "109",
       "naziv": "Punjeni šampinjoni",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "16 šampinjona",
+        "100g sira",
+        "50g slanine",
+        "1 češanj češnjaka",
+        "peršun",
+        "sol",
+        "biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 26,
-      "kalorije": 525,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
+      "upute": "Šampinjonima izvaditi stapke. Napuniti mješavinom sira, slanine i začina. Peći u rerni 20 minuta.",
+      "vremePripreme": 30,
+      "kalorije": 220,
+      "slika": "https://recepti-api.index.hr/img/preview/large/recipe/6aa5eb64-20c7-4dc2-95ff-5a18bd4aa980/shutterstock_343031117.jpg",
+      "autorId": 1,
+      "id": "109"
     },
     {
-      "id": "110",
       "naziv": "Povrće na žaru",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "1 tikvica",
+        "1 paprika",
+        "1 patlidžan",
+        "2 paradajza",
+        "maslinovo ulje",
+        "sol",
+        "biber",
+        "začinsko bilje"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 23,
-      "kalorije": 295,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
+      "upute": "Povrće narezati i začiniti uljem. Peći na roštilju 4-5 minuta sa svake strane.",
+      "vremePripreme": 20,
+      "kalorije": 150,
+      "slika": "https://static.kraljzara.hr/cache/0X300/blog/174/1.jpg",
+      "autorId": 1,
+      "id": "110"
     },
     {
-      "id": "111",
       "naziv": "Goveđi odrezak",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "600g goveđeg odreska",
+        "sol",
+        "crni biber",
+        "maslac",
+        "2 čena češnjaka",
+        "ruzmarin"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 15,
-      "kalorije": 234,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
+      "upute": "Odrezak začiniti sat vremena. Peći na vrućoj tavi 3-4 minute sa svake strane. Odmoriti 5 minuta.",
+      "vremePripreme": 20,
+      "kalorije": 400,
+      "slika": "https://piovariations.cdn.podravka.net/public/film/1200/5b4edab6-6383-11eb-9010-0242ac120047.webp",
+      "autorId": 1,
+      "id": "111"
     },
     {
-      "id": "112",
       "naziv": "Pileći curry",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "500g pilećih prsa",
+        "1 luk",
+        "2 čena češnjaka",
+        "400ml kokosovog mlijeka",
+        "curry prah",
+        "sol",
+        "biber"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 57,
-      "kalorije": 177,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
+      "upute": "Piletinu narezati i propržiti. Dodati luk, češnjak i curry. Dodati kokosovo mlijeko i dinstati 20 minuta.",
+      "vremePripreme": 35,
+      "kalorije": 380,
+      "slika": "https://www.allrecipes.com/thmb/o9Cs2KkpzW7FXLAhEjLItDNrBzY=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/46822-Indian-Chicken-Curry-PICS-Beauty-4x3-9535b806e7dc4f1da14f8ddb7a6367a4.jpg",
+      "autorId": 1,
+      "id": "112"
     },
     {
-      "id": "113",
-      "naziv": "Pad thai",
-      "kategorija": "glavno jelo",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 36,
-      "kalorije": 373,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "114",
       "naziv": "Sushi rolice",
       "kategorija": "glavno jelo",
       "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
+        "300g sushi riže",
+        "2 lista nori alge",
+        "100g lososa",
+        "krastavac",
+        "avokado",
+        "soja sos",
+        "wasabi"
       ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 27,
-      "kalorije": 409,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "115",
-      "naziv": "Tacos sa piletinom",
-      "kategorija": "glavno jelo",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 30,
-      "kalorije": 237,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "116",
-      "naziv": "Burrito sa goveđim mesom",
-      "kategorija": "glavno jelo",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 44,
-      "kalorije": 156,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "117",
-      "naziv": "Čorba od tikvica",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 48,
-      "kalorije": 218,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "118",
-      "naziv": "Čorba od artičoke",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 35,
-      "kalorije": 415,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "119",
-      "naziv": "Čorba od batata",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 27,
-      "kalorije": 355,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "120",
-      "naziv": "Čorba od jagnjećeg mesa",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 33,
-      "kalorije": 180,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "121",
-      "naziv": "Čorba od morskih plodova",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 60,
-      "kalorije": 417,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "122",
-      "naziv": "Čorba od pilećih krilca",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 12,
-      "kalorije": 408,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "123",
-      "naziv": "Čorba od poriluka",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 43,
-      "kalorije": 410,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "124",
-      "naziv": "Čorba od ječma",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 38,
-      "kalorije": 421,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "125",
-      "naziv": "Čorba od raži",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 58,
-      "kalorije": 523,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "126",
-      "naziv": "Čorba od kukuruza",
-      "kategorija": "juha",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
+      "upute": "Rižu skuhati i ohladiti. Na nori listu rasporediti rižu. Dodati fil i zarolati. Narezati na kolutove.",
       "vremePripreme": 45,
-      "kalorije": 315,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "127",
-      "naziv": "Acai bowl",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 34,
-      "kalorije": 264,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "128",
-      "naziv": "Egg benedikt",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 28,
-      "kalorije": 233,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "129",
-      "naziv": "Avokado tost sa jajetom",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 29,
-      "kalorije": 508,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "130",
-      "naziv": "Blueberry muffini",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 52,
-      "kalorije": 369,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "131",
-      "naziv": "Kokosova kaša",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 55,
-      "kalorije": 248,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "132",
-      "naziv": "Proteinske palačinke",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 51,
-      "kalorije": 223,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "133",
-      "naziv": "Grčki jogurt sa granolom",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 58,
-      "kalorije": 404,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "134",
-      "naziv": "Tost sa kikiriki maslacem",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 23,
-      "kalorije": 327,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "135",
-      "naziv": "Voćna salata",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 30,
-      "kalorije": 208,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "136",
-      "naziv": "Domaći krekeri sa sirom",
-      "kategorija": "doručak",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 28,
-      "kalorije": 289,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "137",
-      "naziv": "Salata od radiča",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 61,
-      "kalorije": 244,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "138",
-      "naziv": "Salata od endivije",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 41,
-      "kalorije": 190,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "139",
-      "naziv": "Salata od manga",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 43,
-      "kalorije": 403,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "140",
-      "naziv": "Salata od naranče",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 50,
-      "kalorije": 371,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "141",
-      "naziv": "Salata od jagoda",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 62,
-      "kalorije": 386,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "142",
-      "naziv": "Salata od grožđa",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 30,
-      "kalorije": 443,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "143",
-      "naziv": "Salata od kruške",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 52,
-      "kalorije": 290,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "144",
-      "naziv": "Salata od smokve",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 11,
-      "kalorije": 216,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "145",
-      "naziv": "Salata od graška",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 21,
-      "kalorije": 504,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "146",
-      "naziv": "Salata od brokolija",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 14,
-      "kalorije": 382,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "147",
-      "naziv": "Salata od karfiola",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 46,
-      "kalorije": 157,
-      "slika": "https://images.unsplash.com/photo-1547592180-85f173990554?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "148",
-      "naziv": "Salata od tikvice",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 33,
-      "kalorije": 312,
-      "slika": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "149",
-      "naziv": "Salata od patlidžana",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 48,
-      "kalorije": 302,
-      "slika": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "150",
-      "naziv": "Salata od paprike",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 60,
-      "kalorije": 170,
-      "slika": "https://images.unsplash.com/photo-1517673408077-4f80e346e3a0?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "151",
-      "naziv": "Salata od kupusa",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 35,
-      "kalorije": 453,
-      "slika": "https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "152",
-      "naziv": "Salata od kelja",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 17,
-      "kalorije": 241,
-      "slika": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "153",
-      "naziv": "Salata od kvinoje",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 53,
-      "kalorije": 541,
-      "slika": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "154",
-      "naziv": "Salata od heljde",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 15,
-      "kalorije": 212,
-      "slika": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "155",
-      "naziv": "Salata od amaranta",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 21,
-      "kalorije": 453,
-      "slika": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=500",
-      "autorId": 1
-    },
-    {
-      "id": "156",
-      "naziv": "Salata od bulgura",
-      "kategorija": "salata",
-      "sastojci": [
-        "sastojak 1",
-        "sastojak 2",
-        "sastojak 3"
-      ],
-      "upute": "Pripremite sastojke. Kuhajte prema uputama. Poslužite toplo.",
-      "vremePripreme": 38,
-      "kalorije": 287,
-      "slika": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500",
-      "autorId": 1
+      "kalorije": 320,
+      "slika": "https://www.okusi.eu/system/wp-content/uploads/2020/05/recept-sushi-i-maki.jpg",
+      "autorId": 1,
+      "id": "114"
     }
   ],
   "planIshrane": [
@@ -2428,17 +1264,7 @@
       "id": "FHTGCwTywM4"
     }
   ],
-  "zahtjeviZaPlan": [
-    {
-      "korisnikId": "d3gZCivh_fw",
-      "korisnikIme": "altan",
-      "korisnikEmail": "altan@gmail.com",
-      "poruka": "zelim ultra dobar plan prehrane ",
-      "status": "u obradi",
-      "datum": "2026-05-29T09:30:19.359Z",
-      "id": "48tHDykH6Fo"
-    }
-  ],
-  "$schema": "./node_modules/json-server/schema.json",
-  "personaliziraniPlanovi": []
+  "zahtjeviZaPlan": [],
+  "personaliziraniPlanovi": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }

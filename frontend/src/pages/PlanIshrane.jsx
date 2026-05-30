@@ -9,6 +9,7 @@ function PlanIshrane() {
   const { data: plan, loading, greska } = useFetch('http://localhost:3001/planIshrane/1')
   const { data: recepti } = useFetch('http://localhost:3001/recepti')
   const { data: zahtjevi } = useFetch('http://localhost:3001/zahtjeviZaPlan')
+  const { data: personaliziraniPlanovi } = useFetch('http://localhost:3001/personaliziraniPlanovi')
   const [toast, setToast] = useState(null)
   const [zahtjevPoslan, setZahtjevPoslan] = useState(false)
   const [poruka, setPoruka] = useState('')
@@ -20,6 +21,7 @@ function PlanIshrane() {
   const getRecept = (id) => recepti?.find(r => r.id === id || r.id === String(id))
 
   const mojZahtjev = zahtjevi?.filter(z => z.korisnikId === korisnik?.id).pop()
+  const mojPlan = personaliziraniPlanovi?.filter(p => p.korisnikId === korisnik?.id).pop()
 
   const handleZahtjev = async (e) => {
     e.preventDefault()
@@ -44,6 +46,9 @@ function PlanIshrane() {
     }
   }
 
+  const aktivniPlan = mojPlan || plan
+  const jeLicni = !!mojPlan
+
   if (loading) return <Spinner />
 
   if (greska) return (
@@ -65,7 +70,9 @@ function PlanIshrane() {
       <div className="max-w-6xl mx-auto">
 
         <h1 className="text-4xl font-bold text-green-800 mb-2 text-center">Plan ishrane</h1>
-        <p className="text-gray-500 text-center mb-10">Sedmični plan obroka</p>
+        <p className="text-gray-500 text-center mb-10">
+          {jeLicni ? `Personalizirani plan za ${korisnik?.ime}` : 'Sedmični plan obroka'}
+        </p>
 
         {/* Zahtjev za personalizirani plan */}
         {korisnik?.uloga === 'guest' && (
@@ -77,8 +84,7 @@ function PlanIshrane() {
               Pošaljite zahtjev adminu za kreiranje vašeg personalnog plana ishrane.
             </p>
 
-{/* Prikaz statusa ako postoji zahtjev */}
-{mojZahtjev ? (
+            {mojZahtjev ? (
               <div className={`p-4 rounded-lg ${
                 mojZahtjev.status === 'na čekanju' ? 'bg-orange-50 border border-orange-200' :
                 mojZahtjev.status === 'u obradi' ? 'bg-blue-50 border border-blue-200' :
@@ -132,7 +138,14 @@ function PlanIshrane() {
           </div>
         )}
 
-        {/* Sedmični plan */}
+        {/* Badge ako je personalizirani plan */}
+        {jeLicni && (
+          <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-6 text-center">
+            <p className="text-green-700 font-semibold">✨ Ovo je vaš personalizirani plan kreiran od strane admina!</p>
+          </div>
+        )}
+
+        {/* Plan */}
         <div className="flex flex-col gap-6">
           {dani.map(dan => (
             <div key={dan} className="bg-white rounded-xl shadow p-6">
@@ -141,7 +154,7 @@ function PlanIshrane() {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {obroci.map(obrok => {
-                  const receptId = plan?.dani?.[dan]?.[obrok]
+                  const receptId = aktivniPlan?.dani?.[dan]?.[obrok]
                   const recept = getRecept(receptId)
                   return (
                     <div key={obrok} className="bg-gray-50 rounded-lg p-4">

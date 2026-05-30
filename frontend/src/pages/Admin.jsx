@@ -1,6 +1,16 @@
 import { useState } from 'react'
 import useFetch from '../hooks/useFetch'
 
+const prazanPlan = {
+  ponedjeljak: { dorucak: '', rucak: '', vecera: '' },
+  utorak: { dorucak: '', rucak: '', vecera: '' },
+  srijeda: { dorucak: '', rucak: '', vecera: '' },
+  cetvrtak: { dorucak: '', rucak: '', vecera: '' },
+  petak: { dorucak: '', rucak: '', vecera: '' },
+  subota: { dorucak: '', rucak: '', vecera: '' },
+  nedjelja: { dorucak: '', rucak: '', vecera: '' },
+}
+
 function Admin() {
   const { data: recepti, loading } = useFetch('http://localhost:3001/recepti')
   const { data: korisnici } = useFetch('http://localhost:3001/users')
@@ -19,6 +29,12 @@ function Admin() {
   })
   const [prikaz, setPrikaz] = useState('statistike')
   const [pretraga, setPretraga] = useState('')
+  const [kreirajPlanZa, setKreirajPlanZa] = useState(null)
+  const [noviPlan, setNoviPlan] = useState(prazanPlan)
+
+  const dani = ['ponedjeljak', 'utorak', 'srijeda', 'cetvrtak', 'petak', 'subota', 'nedjelja']
+  const obroci = ['dorucak', 'rucak', 'vecera']
+  const obrociNazivi = { dorucak: '🍳 Doručak', rucak: '🍽️ Ručak', vecera: '🌙 Večera' }
 
   const resetForma = () => {
     setForma({
@@ -93,6 +109,27 @@ function Admin() {
       slika: recept.slika
     })
     setPrikaz('uredi')
+  }
+
+  const handleSpremiPlan = async (zahtjev) => {
+    await fetch('http://localhost:3001/personaliziraniPlanovi', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        korisnikId: zahtjev.korisnikId,
+        korisnikIme: zahtjev.korisnikIme,
+        dani: noviPlan,
+        datum: new Date().toISOString()
+      })
+    })
+    await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status: 'završeno' })
+    })
+    setKreirajPlanZa(null)
+    setNoviPlan(prazanPlan)
+    window.location.reload()
   }
 
   const filtrianiRecepti = recepti?.filter(r =>
@@ -289,59 +326,112 @@ function Admin() {
                   </p>
                   <p className="text-gray-700 bg-gray-50 p-3 rounded-lg mb-4">{zahtjev.poruka}</p>
 
-                  {/* Odgovor admina */}
-                  <div className="border-t pt-4">
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Poruka korisniku</label>
-                    <textarea
-                      defaultValue={zahtjev.odgovor || ''}
-                      id={`odgovor-${zahtjev.id}`}
-                      rows={3}
-                      placeholder="Upišite poruku korisniku..."
-                      className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none mb-3"
-                    />
-                    <div className="flex gap-2">
-                      <button
-                        onClick={async () => {
-                          const odgovor = document.getElementById(`odgovor-${zahtjev.id}`).value
-                          await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
-                            method: 'PATCH',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ odgovor, status: 'u obradi' })
-                          })
-                          window.location.reload()
-                        }}
-                        className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm transition"
-                      >
-                        Pošalji poruku
-                      </button>
-                      <button
-                        onClick={async () => {
-                          const odgovor = document.getElementById(`odgovor-${zahtjev.id}`).value
-                          await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
-                            method: 'PATCH',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ odgovor, status: 'završeno' })
-                          })
-                          window.location.reload()
-                        }}
-                        className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm transition"
-                      >
-                        Završeno
-                      </button>
-                      <button
-                        onClick={async () => {
-                          if (!window.confirm('Jeste li sigurni da želite obrisati ovaj zahtjev?')) return
-                          await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
-                            method: 'DELETE'
-                          })
-                          window.location.reload()
-                        }}
-                        className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm transition"
-                      >
-                        Obriši
-                      </button>
+                  {/* Forma za kreiranje plana */}
+                  {kreirajPlanZa === zahtjev.id ? (
+                    <div className="border-t pt-4">
+                      <h4 className="font-bold text-green-800 mb-4">📅 Kreiraj plan za {zahtjev.korisnikIme}</h4>
+                      <div className="flex flex-col gap-4">
+                        {dani.map(dan => (
+                          <div key={dan} className="bg-gray-50 rounded-lg p-4">
+                            <p className="font-semibold text-gray-700 capitalize mb-3">{dan}</p>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                              {obroci.map(obrok => (
+                                <div key={obrok}>
+                                  <label className="text-xs text-gray-500 mb-1 block">{obrociNazivi[obrok]}</label>
+                                  <select
+                                    value={noviPlan[dan][obrok]}
+                                    onChange={(e) => setNoviPlan(prev => ({
+                                      ...prev,
+                                      [dan]: { ...prev[dan], [obrok]: e.target.value }
+                                    }))}
+                                    className="w-full border border-gray-300 rounded-lg px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                                  >
+                                    <option value="">-- Odaberi recept --</option>
+                                    {recepti?.map(r => (
+                                      <option key={r.id} value={r.id}>{r.naziv}</option>
+                                    ))}
+                                  </select>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="flex gap-2 mt-4">
+                        <button
+                          onClick={() => handleSpremiPlan(zahtjev)}
+                          className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition"
+                        >
+                          💾 Spremi plan
+                        </button>
+                        <button
+                          onClick={() => { setKreirajPlanZa(null); setNoviPlan(prazanPlan) }}
+                          className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-lg text-sm font-semibold transition"
+                        >
+                          Odustani
+                        </button>
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="border-t pt-4">
+                      <label className="block text-sm font-medium text-gray-700 mb-2">Poruka korisniku</label>
+                      <textarea
+                        defaultValue={zahtjev.odgovor || ''}
+                        id={`odgovor-${zahtjev.id}`}
+                        rows={3}
+                        placeholder="Upišite poruku korisniku..."
+                        className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none mb-3"
+                      />
+                      <div className="flex gap-2 flex-wrap">
+                        <button
+                          onClick={async () => {
+                            const odgovor = document.getElementById(`odgovor-${zahtjev.id}`).value
+                            await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+                              method: 'PATCH',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ odgovor, status: 'u obradi' })
+                            })
+                            window.location.reload()
+                          }}
+                          className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm transition"
+                        >
+                          Pošalji poruku
+                        </button>
+                        <button
+                          onClick={() => setKreirajPlanZa(zahtjev.id)}
+                          className="bg-purple-500 hover:bg-purple-600 text-white px-3 py-1 rounded text-sm transition"
+                        >
+                          📅 Kreiraj plan
+                        </button>
+                        <button
+                          onClick={async () => {
+                            const odgovor = document.getElementById(`odgovor-${zahtjev.id}`).value
+                            await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+                              method: 'PATCH',
+                              headers: { 'Content-Type': 'application/json' },
+                              body: JSON.stringify({ odgovor, status: 'završeno' })
+                            })
+                            window.location.reload()
+                          }}
+                          className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-sm transition"
+                        >
+                          Završeno
+                        </button>
+                        <button
+                          onClick={async () => {
+                            if (!window.confirm('Jeste li sigurni da želite obrisati ovaj zahtjev?')) return
+                            await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+                              method: 'DELETE'
+                            })
+                            window.location.reload()
+                          }}
+                          className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm transition"
+                        >
+                          Obriši
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))
             )}

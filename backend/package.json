@@ -1,0 +1,10 @@
+{
+  "name": "recepti-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "json-server --watch db.json --host 0.0.0.0 --port 3001"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0"
+  }
+}

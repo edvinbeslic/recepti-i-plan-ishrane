@@ -9,10 +9,10 @@ Web aplikacija koja korisnicima omogućava pregled i pretragu recepata te kreira
 ### Edvin Bešlić
 **DWS:** Inicijalna struktura projekta, React routing i Auth Context, Navbar, Footer, Prijava, Registracija, useFetch hook, Recepti stranica sa pretragom i filterima, ReceptDetalji stranica, Kontakt stranica sa Google Maps, Admin panel sa CRUD operacijama, Skeleton loading, Breadcrumbs, Fade-in animacije, Admin kreiranje personalnog plana za korisnika
 
-**OSiRuO:** docker-compose.yml, environment varijable, GitHub Actions deploy.yml, GCP deployment
+**OSiRuO:** docker-compose.yml, environment varijable, GitHub Actions deploy.yml, Vercel deployment (frontend), Render deployment (backend)
 
 ### Ammar Puščul
-**DWS:** Landing stranica, ONama stranica, NotFound stranica, PlanIshrane stranica, Spinner komponent, Fontovi Playfair Display i Inter, Toast notifikacije, Named volume i environment varijable
+**DWS:** Landing stranica, ONama stranica, NotFound stranica, PlanIshrane stranica, Spinner komponent, Fontovi Playfair Display i Inter, Toast notifikacije, Named volume i environment varijable, Pokušaj GCP Deploymenta koji nije uspio
 
 **OSiRuO:** Dockerfile backend (node:18-alpine), health-check.sh skripta, nginx konfiguracija
 

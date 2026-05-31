@@ -12,9 +12,10 @@ Web aplikacija koja korisnicima omogućava pregled i pretragu recepata te kreira
 **OSiRuO:** docker-compose.yml, environment varijable, GitHub Actions deploy.yml, Vercel deployment (frontend), Render deployment (backend)
 
 ### Ammar Puščul
-**DWS:** Landing stranica, ONama stranica, NotFound stranica, PlanIshrane stranica, Spinner komponent, Fontovi Playfair Display i Inter, Toast notifikacije, Named volume i environment varijable, Pokušaj GCP Deploymenta koji nije uspio
+**DWS:** Landing stranica, ONama stranica, NotFound stranica, PlanIshrane stranica, Spinner komponent, Fontovi Playfair Display i Inter, Toast notifikacije, Named volume i environment varijable
 
-**OSiRuO:** Dockerfile backend (node:18-alpine), health-check.sh skripta, nginx konfiguracija
+**OSiRuO:** Dockerfile backend (node:18-alpine), health-check.sh skripta, nginx konfiguracija, Pokušaj GCP Deploymenta koji nije uspio
+
 
 ### Hena Neslanović
 **DWS:** CSS varijable za boje, RecipeCard komponent, 150+ recepata u bazu, Toast na Prijavi i Registraciji, Unaprijeđen Admin panel sa statistikama, Zahtjevi za personalizirani plan, Favicon, Hero slika na Landing stranici, Paginacija na Recepti stranici, Sakrivena tipka za registraciju prijavljenim korisnicima
@@ -272,6 +273,11 @@ docker push europe-west1-docker.pkg.dev/PROJECT_ID/recepti-repo/backend
 - Start Command: `./node_modules/.bin/json-server --watch db.json --host 0.0.0.0 --port 3001`
 - Napomena: Free tier – server se gasi nakon neaktivnosti, prvi request može trajati 50+ sekundi
 
+#### Backend VM – Railway
+- Platforma: [Railway](https://railway.app)
+- URL: https://recepti-backend-production.up.railway.app
+- Docker based deployment na cloud VM
+- Auto-restart konfiguriran
 ---
 
 ### 🔍 Health Check skripta

@@ -211,14 +211,13 @@ CMD ["json-server", "--watch", "db.json", "--host", "0.0.0.0", "--port", "3001"]
 ### docker-compose.yml
 
 ```yaml
-version: '3.8'
 services:
   backend:
     build: ./backend
     ports:
       - "${BACKEND_PORT:-3001}:3001"
     volumes:
-      - db_data:/app/db.json
+      - ./backend/db.json:/app/db.json
     environment:
       - PORT=3001
     healthcheck:
@@ -226,14 +225,15 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
+
   frontend:
     build: ./frontend
     ports:
       - "${FRONTEND_PORT:-80}:80"
+    environment:
+      - VITE_API_URL=http://backend:3001
     depends_on:
       - backend
-volumes:
-  db_data:
 ```
 
 ### Lokalno pokretanje sa Dockerom

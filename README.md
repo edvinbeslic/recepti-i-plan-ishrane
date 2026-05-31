@@ -254,52 +254,23 @@ Backend dostupan na: `http://localhost:3001`
 
 ---
 
-### ☁️ GCP Setup procedura
-
-```bash
-# 1. Autentifikacija
-gcloud auth login
-
-# 2. Postavljanje projekta
-gcloud config set project PROJECT_ID
-
-# 3. Omogućavanje potrebnih APIs
-gcloud services enable artifactregistry.googleapis.com run.googleapis.com cloudbuild.googleapis.com
-
-# 4. Kreiranje Artifact Registry repozitorija
-gcloud artifacts repositories create recepti-repo \
-  --repository-format=docker \
-  --location=europe-west1
-
-# 5. Konfiguracija Docker autentifikacije
-gcloud auth configure-docker europe-west1-docker.pkg.dev
-
-# 6. Build i push Frontend image
-docker build -t europe-west1-docker.pkg.dev/PROJECT_ID/recepti-repo/frontend ./frontend
-docker push europe-west1-docker.pkg.dev/PROJECT_ID/recepti-repo/frontend
-
-# 7. Build i push Backend image
-docker build -t europe-west1-docker.pkg.dev/PROJECT_ID/recepti-repo/backend ./backend
+/backend ./backend
 docker push europe-west1-docker.pkg.dev/PROJECT_ID/recepti-repo/backend
 
-# 8. Deploy Backend na Cloud Run
-gcloud run deploy recepti-backend \
-  --image europe-west1-docker.pkg.dev/PROJECT_ID/recepti-repo/backend \
-  --platform managed \
-  --region europe-west1 \
-  --allow-unauthenticated \
-  --port 3001
+### ☁️ Deployment
 
-# 9. Deploy Frontend na Cloud Run
-gcloud run deploy recepti-frontend \
-  --image europe-west1-docker.pkg.dev/PROJECT_ID/recepti-repo/frontend \
-  --platform managed \
-  --region europe-west1 \
-  --allow-unauthenticated \
-  --port 80
-```
+#### Frontend – Vercel
+- Platforma: [Vercel](https://vercel.com)
+- URL: https://recepti-frontend.vercel.app
+- Auto-deploy na svaki push na `main` branch
+- Environment variable: `VITE_API_URL=https://recepti-backend.onrender.com`
 
-**Produkcijski URL:** *(dodati nakon deploymenta)*
+#### Backend – Render
+- Platforma: [Render](https://render.com)
+- URL: https://recepti-backend.onrender.com
+- Build Command: `npm install json-server`
+- Start Command: `./node_modules/.bin/json-server --watch db.json --host 0.0.0.0 --port 3001`
+- Napomena: Free tier – server se gasi nakon neaktivnosti, prvi request može trajati 50+ sekundi
 
 ---
 
@@ -313,13 +284,11 @@ Skripta se nalazi u `scripts/health-check.sh` i provjerava dostupnost svih servi
 ```
 
 Primjer izlaza:
-```
 Provjera backend servisa...
 ✅ Backend radi na http://localhost:3001/recepti
 Provjera frontend servisa...
 ✅ Frontend radi na http://localhost:80
 ✅ Svi servisi rade ispravno!
-```
 
 ---
 
@@ -329,11 +298,11 @@ Provjera frontend servisa...
 - React Context API i custom hooks su moćan alat za upravljanje globalnim stanjem bez potrebe za Redux-om
 - Multi-stage Docker build značajno smanjuje veličinu finalnog imagea
 - Nginx konfiguracija je ključna za React Router – bez `try_files` direktive refresh stranice vraća 404
-- GCP Cloud Run je jednostavan za deployment ali zahtijeva billing setup
+- Vercel i Render su odlične besplatne alternative za deployment bez potrebe za karticom
 - Git branching strategija i redovni commitovi olakšavaju timski rad i praćenje napretka
 
 **Izazovi:**
-- Billing setup na školskim Google accountima (`dl.unze.ba`) nije bio moguć zbog organizacijskih restrikcija
+- Billing setup nije bio moguć pa smo koristili Vercel i Render
 - Konfiguracija nginx `try_files` za React Router je bila neočekivano složena
 - Sinhronizacija rada između članova tima i izbjegavanje merge conflicta
 - Backtick karakteri u JSX template literals su se gubili pri copy-paste iz dokumentacije
@@ -342,10 +311,20 @@ Provjera frontend servisa...
 - Koristili bismo pravu bazu podataka (PostgreSQL) umjesto json-server za produkcijsko okruženje
 - Implementirali bismo JWT autentifikaciju umjesto localStorage
 - Dodali bismo jedinične i integracijske testove
-- Ranije bismo riješili GCP billing pitanje
+- Koristili bi GCP Billing da nismo imali problema sa njim
 
 ---
 
 ## 📸 Snimci ekrana
 
-*(dodati nakon deploymenta)*
+![Landing](screenshots/landing.jpg)
+![Recepti](screenshots/recepti.jpg)
+![Recept detalji](screenshots/recept-detalji.jpg)
+![Plan ishrane](screenshots/plan-ishrane.jpg)
+![O nama](screenshots/o-nama.jpg)
+![Kontakt](screenshots/kontakt.jpg)
+![Registracija](screenshots/registracija.jpg)
+![Prijava](screenshots/prijava.jpg)
+![Admin panel](screenshots/admin-statistike.jpg)
+![Admin recepti](screenshots/admin-recepti.jpg)
+![Mobilni prikaz](screenshots/mobilni.jpg)

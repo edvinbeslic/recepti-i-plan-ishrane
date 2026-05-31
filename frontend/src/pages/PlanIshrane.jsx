@@ -3,13 +3,14 @@ import useFetch from '../hooks/useFetch'
 import Spinner from '../components/Spinner'
 import { useAuth } from '../hooks/useAuth'
 import Toast from '../components/Toast'
+import API_URL from '../config'
 
 function PlanIshrane() {
   const { korisnik } = useAuth()
-  const { data: plan, loading, greska } = useFetch('http://localhost:3001/planIshrane/1')
-  const { data: recepti } = useFetch('http://localhost:3001/recepti')
-  const { data: zahtjevi } = useFetch('http://localhost:3001/zahtjeviZaPlan')
-  const { data: personaliziraniPlanovi } = useFetch('http://localhost:3001/personaliziraniPlanovi')
+  const { data: plan, loading, greska } = useFetch(`${API_URL}/planIshrane/1`)
+  const { data: recepti } = useFetch(`${API_URL}/recepti`)
+  const { data: zahtjevi } = useFetch(`${API_URL}/zahtjeviZaPlan`)
+  const { data: personaliziraniPlanovi } = useFetch(`${API_URL}/personaliziraniPlanovi`)
   const [toast, setToast] = useState(null)
   const [zahtjevPoslan, setZahtjevPoslan] = useState(false)
   const [poruka, setPoruka] = useState('')
@@ -26,7 +27,7 @@ function PlanIshrane() {
   const handleZahtjev = async (e) => {
     e.preventDefault()
     try {
-      await fetch('http://localhost:3001/zahtjeviZaPlan', {
+      await fetch(`${API_URL}/zahtjeviZaPlan`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -74,7 +75,6 @@ function PlanIshrane() {
           {jeLicni ? `Personalizirani plan za ${korisnik?.ime}` : 'Sedmični plan obroka'}
         </p>
 
-        {/* Zahtjev za personalizirani plan */}
         {korisnik?.uloga === 'guest' && (
           <div className="bg-white rounded-xl shadow p-6 mb-8">
             <h2 className="text-xl font-bold text-green-800 mb-2">
@@ -138,14 +138,12 @@ function PlanIshrane() {
           </div>
         )}
 
-        {/* Badge ako je personalizirani plan */}
         {jeLicni && (
           <div className="bg-green-50 border border-green-200 rounded-lg p-3 mb-6 text-center">
             <p className="text-green-700 font-semibold">✨ Ovo je vaš personalizirani plan kreiran od strane admina!</p>
           </div>
         )}
 
-        {/* Plan */}
         <div className="flex flex-col gap-6">
           {dani.map(dan => (
             <div key={dan} className="bg-white rounded-xl shadow p-6">

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Toast from '../components/Toast'
+import API_URL from '../config'
 
 function Kontakt() {
   const [forma, setForma] = useState({
@@ -34,7 +35,7 @@ function Kontakt() {
     setLoading(true)
 
     try {
-      await fetch('http://localhost:3001/kontaktPoruke', {
+      await fetch(`${API_URL}/kontaktPoruke`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

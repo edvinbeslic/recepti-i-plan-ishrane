@@ -1,11 +1,12 @@
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import useFetch from '../hooks/useFetch'
 import Spinner from '../components/Spinner'
+import API_URL from '../config'
 
 function ReceptDetalji() {
   const { id } = useParams()
   const navigate = useNavigate()
-  const { data: recept, loading, greska } = useFetch(`http://localhost:3001/recepti/${id}`)
+  const { data: recept, loading, greska } = useFetch(`${API_URL}/recepti/${id}`)
 
   if (loading) return <Spinner />
 

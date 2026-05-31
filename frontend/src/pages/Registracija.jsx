@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Toast from '../components/Toast'
+import API_URL from '../config'
 
 function Registracija() {
   const navigate = useNavigate()
@@ -38,7 +39,7 @@ function Registracija() {
     setLoading(true)
 
     try {
-      const provjera = await fetch(`http://localhost:3001/users?email=${forma.email}`)
+      const provjera = await fetch(`${API_URL}/users?email=${forma.email}`)
       const postojeci = await provjera.json()
 
       if (postojeci.length > 0) {
@@ -47,7 +48,7 @@ function Registracija() {
         return
       }
 
-      await fetch('http://localhost:3001/users', {
+      await fetch(`${API_URL}/users`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

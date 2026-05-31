@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import Toast from '../components/Toast'
+import API_URL from '../config'
 
 function Prijava() {
   const { prijava } = useAuth()
@@ -31,7 +32,7 @@ function Prijava() {
     setLoading(true)
 
     try {
-      const res = await fetch(`http://localhost:3001/users?email=${forma.email}&lozinka=${forma.lozinka}`)
+      const res = await fetch(`${API_URL}/users?email=${forma.email}&lozinka=${forma.lozinka}`)
       const data = await res.json()
 
       if (data.length === 0) {

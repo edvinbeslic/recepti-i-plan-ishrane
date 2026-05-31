@@ -2,11 +2,12 @@ import { useState } from 'react'
 import useFetch from '../hooks/useFetch'
 import RecipeCard from '../components/RecipeCard'
 import SkeletonCard from '../components/SkeletonCard'
+import API_URL from '../config'
 
 const PO_STRANICI = 12
 
 function Recepti() {
-  const { data: recepti, loading, greska } = useFetch('http://localhost:3001/recepti')
+  const { data: recepti, loading, greska } = useFetch(`${API_URL}/recepti`)
   const [pretraga, setPretraga] = useState('')
   const [filter, setFilter] = useState('svi')
   const [stranica, setStranica] = useState(1)

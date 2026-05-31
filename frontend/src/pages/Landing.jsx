@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import RecipeCard from '../components/RecipeCard'
 import { useAuth } from '../hooks/useAuth'
+import API_URL from '../config'
 
 function Landing() {
   const { korisnik } = useAuth()
@@ -9,7 +10,7 @@ function Landing() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://localhost:3001/recepti')
+    fetch(`${API_URL}/recepti`)
       .then(res => res.json())
       .then(data => {
         setRecepti(data.slice(0, 3))

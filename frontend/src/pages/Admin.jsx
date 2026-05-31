@@ -13,10 +13,10 @@ const prazanPlan = {
 }
 
 function Admin() {
-  const { data: recepti, loading } = useFetch('${API_URL}/recepti')
-  const { data: korisnici } = useFetch('${API_URL}/users')
-  const { data: poruke } = useFetch('${API_URL}/kontaktPoruke')
-  const { data: zahtjevi } = useFetch('${API_URL}/zahtjeviZaPlan')
+  const { data: recepti, loading } = useFetch(`${API_URL}/recepti`)
+  const { data: korisnici } = useFetch(`${API_URL}/users`)
+  const { data: poruke } = useFetch(`${API_URL}/kontaktPoruke`)
+  const { data: zahtjevi } = useFetch(`${API_URL}/zahtjeviZaPlan`)
 
   const [odabraniRecept, setOdabraniRecept] = useState(null)
   const [forma, setForma] = useState({
@@ -52,7 +52,7 @@ function Admin() {
 
   const handleDodaj = async (e) => {
     e.preventDefault()
-    await fetch('${API_URL}/recepti', {
+    await fetch(`${API_URL}/recepti`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -113,7 +113,7 @@ function Admin() {
   }
 
   const handleSpremiPlan = async (zahtjev) => {
-    await fetch('${API_URL}/personaliziraniPlanovi', {
+    await fetch(`${API_URL}/personaliziraniPlanovi`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -149,7 +149,6 @@ function Admin() {
 
         <h1 className="text-4xl font-bold text-green-800 mb-8 text-center">Admin Panel</h1>
 
-        {/* Navigacija */}
         <div className="flex gap-3 mb-8 flex-wrap">
           {['statistike', 'recepti', 'korisnici', 'poruke', 'zahtjevi', 'dodaj'].map(tab => (
             <button
@@ -171,7 +170,6 @@ function Admin() {
           ))}
         </div>
 
-        {/* Statistike */}
         {prikaz === 'statistike' && (
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="bg-white rounded-xl shadow p-6 text-center">
@@ -193,7 +191,6 @@ function Admin() {
           </div>
         )}
 
-        {/* Lista recepata */}
         {prikaz === 'recepti' && (
           <div>
             <input
@@ -241,7 +238,6 @@ function Admin() {
           </div>
         )}
 
-        {/* Korisnici */}
         {prikaz === 'korisnici' && (
           <div className="bg-white rounded-xl shadow overflow-hidden">
             <table className="w-full">
@@ -281,7 +277,6 @@ function Admin() {
           </div>
         )}
 
-        {/* Kontakt poruke */}
         {prikaz === 'poruke' && (
           <div className="flex flex-col gap-4">
             {poruke?.length === 0 ? (
@@ -304,7 +299,6 @@ function Admin() {
           </div>
         )}
 
-        {/* Zahtjevi za plan */}
         {prikaz === 'zahtjevi' && (
           <div className="flex flex-col gap-4">
             {zahtjevi?.length === 0 ? (
@@ -327,7 +321,6 @@ function Admin() {
                   </p>
                   <p className="text-gray-700 bg-gray-50 p-3 rounded-lg mb-4">{zahtjev.poruka}</p>
 
-                  {/* Forma za kreiranje plana */}
                   {kreirajPlanZa === zahtjev.id ? (
                     <div className="border-t pt-4">
                       <h4 className="font-bold text-green-800 mb-4">📅 Kreiraj plan za {zahtjev.korisnikIme}</h4>
@@ -421,9 +414,7 @@ function Admin() {
                         <button
                           onClick={async () => {
                             if (!window.confirm('Jeste li sigurni da želite obrisati ovaj zahtjev?')) return
-                            await fetch(`${API_URL}/zahtjeviZaPlan/${zahtjev.id}`, {
-                              method: 'DELETE'
-                            })
+                            await fetch(`${API_URL}/zahtjeviZaPlan/${zahtjev.id}`, { method: 'DELETE' })
                             window.location.reload()
                           }}
                           className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm transition"
@@ -439,14 +430,12 @@ function Admin() {
           </div>
         )}
 
-        {/* Forma za dodavanje/uređivanje */}
         {(prikaz === 'dodaj' || prikaz === 'uredi') && (
           <div className="bg-white rounded-xl shadow p-8">
             <h2 className="text-2xl font-bold text-green-800 mb-6">
               {prikaz === 'dodaj' ? 'Dodaj novi recept' : 'Uredi recept'}
             </h2>
             <form onSubmit={prikaz === 'dodaj' ? handleDodaj : handleUredi} className="flex flex-col gap-4">
-
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Naziv recepta</label>
                 <input
@@ -457,7 +446,6 @@ function Admin() {
                   required
                 />
               </div>
-
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Kategorija</label>
                 <select
@@ -471,7 +459,6 @@ function Admin() {
                   <option value="salata">Salata</option>
                 </select>
               </div>
-
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Sastojci (odvojeni zarezom)</label>
                 <input
@@ -483,7 +470,6 @@ function Admin() {
                   required
                 />
               </div>
-
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Upute za pripremu</label>
                 <textarea
@@ -494,7 +480,6 @@ function Admin() {
                   required
                 />
               </div>
-
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Vrijeme pripreme (min)</label>
@@ -517,7 +502,6 @@ function Admin() {
                   />
                 </div>
               </div>
-
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">URL slike</label>
                 <input
@@ -528,7 +512,6 @@ function Admin() {
                   placeholder="https://..."
                 />
               </div>
-
               <div className="flex gap-4 mt-2">
                 <button
                   type="submit"
@@ -544,7 +527,6 @@ function Admin() {
                   Odustani
                 </button>
               </div>
-
             </form>
           </div>
         )}

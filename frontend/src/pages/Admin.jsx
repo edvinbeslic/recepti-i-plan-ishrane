@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import useFetch from '../hooks/useFetch'
+import API_URL from '../config'
 
 const prazanPlan = {
   ponedjeljak: { dorucak: '', rucak: '', vecera: '' },
@@ -12,10 +13,10 @@ const prazanPlan = {
 }
 
 function Admin() {
-  const { data: recepti, loading } = useFetch('http://localhost:3001/recepti')
-  const { data: korisnici } = useFetch('http://localhost:3001/users')
-  const { data: poruke } = useFetch('http://localhost:3001/kontaktPoruke')
-  const { data: zahtjevi } = useFetch('http://localhost:3001/zahtjeviZaPlan')
+  const { data: recepti, loading } = useFetch('${API_URL}/recepti')
+  const { data: korisnici } = useFetch('${API_URL}/users')
+  const { data: poruke } = useFetch('${API_URL}/kontaktPoruke')
+  const { data: zahtjevi } = useFetch('${API_URL}/zahtjeviZaPlan')
 
   const [odabraniRecept, setOdabraniRecept] = useState(null)
   const [forma, setForma] = useState({
@@ -51,7 +52,7 @@ function Admin() {
 
   const handleDodaj = async (e) => {
     e.preventDefault()
-    await fetch('http://localhost:3001/recepti', {
+    await fetch('${API_URL}/recepti', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -69,7 +70,7 @@ function Admin() {
 
   const handleUredi = async (e) => {
     e.preventDefault()
-    await fetch(`http://localhost:3001/recepti/${odabraniRecept.id}`, {
+    await fetch(`${API_URL}/recepti/${odabraniRecept.id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -87,13 +88,13 @@ function Admin() {
 
   const handleObrisiRecept = async (id) => {
     if (!window.confirm('Jeste li sigurni da želite obrisati ovaj recept?')) return
-    await fetch(`http://localhost:3001/recepti/${id}`, { method: 'DELETE' })
+    await fetch(`${API_URL}/recepti/${id}`, { method: 'DELETE' })
     window.location.reload()
   }
 
   const handleObrisiKorisnika = async (id) => {
     if (!window.confirm('Jeste li sigurni da želite obrisati ovog korisnika?')) return
-    await fetch(`http://localhost:3001/users/${id}`, { method: 'DELETE' })
+    await fetch(`${API_URL}/users/${id}`, { method: 'DELETE' })
     window.location.reload()
   }
 
@@ -112,7 +113,7 @@ function Admin() {
   }
 
   const handleSpremiPlan = async (zahtjev) => {
-    await fetch('http://localhost:3001/personaliziraniPlanovi', {
+    await fetch('${API_URL}/personaliziraniPlanovi', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -122,7 +123,7 @@ function Admin() {
         datum: new Date().toISOString()
       })
     })
-    await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+    await fetch(`${API_URL}/zahtjeviZaPlan/${zahtjev.id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ status: 'završeno' })
@@ -386,7 +387,7 @@ function Admin() {
                         <button
                           onClick={async () => {
                             const odgovor = document.getElementById(`odgovor-${zahtjev.id}`).value
-                            await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+                            await fetch(`${API_URL}/zahtjeviZaPlan/${zahtjev.id}`, {
                               method: 'PATCH',
                               headers: { 'Content-Type': 'application/json' },
                               body: JSON.stringify({ odgovor, status: 'u obradi' })
@@ -406,7 +407,7 @@ function Admin() {
                         <button
                           onClick={async () => {
                             const odgovor = document.getElementById(`odgovor-${zahtjev.id}`).value
-                            await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+                            await fetch(`${API_URL}/zahtjeviZaPlan/${zahtjev.id}`, {
                               method: 'PATCH',
                               headers: { 'Content-Type': 'application/json' },
                               body: JSON.stringify({ odgovor, status: 'završeno' })
@@ -420,7 +421,7 @@ function Admin() {
                         <button
                           onClick={async () => {
                             if (!window.confirm('Jeste li sigurni da želite obrisati ovaj zahtjev?')) return
-                            await fetch(`http://localhost:3001/zahtjeviZaPlan/${zahtjev.id}`, {
+                            await fetch(`${API_URL}/zahtjeviZaPlan/${zahtjev.id}`, {
                               method: 'DELETE'
                             })
                             window.location.reload()
